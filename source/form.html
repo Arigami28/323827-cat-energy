@@ -6,7 +6,7 @@
 </head>
 <body>
 <header class="header">
-  <img class="header__logo" src="http://placehold.it/191x39" width="191" height="39" alt="CAT ENERGY">
+  <a class="header__logo" href="index.html" title="CAT ENERGY"></a>
   <nav class="header-navigation">
     <button class="header-navigation__button" type="button"></button>
     <ul class="header-navigation__list">
@@ -23,64 +23,64 @@
   </nav>
 </header>
 <section class="programm">
-  <form class="programm__form" action="https://echo.htmlacademy.ru" method="post">
-    <h1 class="programm__main-caption">Подбор программы</h1>
-    <fieldset class="client-info">
+  <form class="programm-form" action="https://echo.htmlacademy.ru" method="post">
+    <h1 class="programm-form__main-caption">Подбор программы</h1>
+    <fieldset class="programm-form__client-info client-info">
       <legend class="client-info__caption">Заполните анкету и мы подберем программу питания для вашего кота</legend>
 
-      <label class="client-info__label" for="client__name">Имя:*</label>
-      <input class="client-info__input-text" type="text" id="client__name" name="name" placeholder="Введите имя" value="Барсик">
+      <label class="client-info__label label" for="client__name">Имя:*</label>
+      <input class="client-info__input-text input" type="text" id="client__name" name="name" placeholder="Введите имя" value="Барсик">
 
-      <label class="client-info__label" for="client__weight">Вес(кг):*</label>
-      <input class="client-info__input-text" type="text" id="client__weight" name="weight" placeholder="Введите вес" value="7">
+      <label class="client-info__label label" for="client__weight">Вес(кг):*</label>
+      <input class="client-info__input-text input" type="text" id="client__weight" name="weight" placeholder="Введите вес" value="7">
 
-      <label class="client-info__label" for="client__age">Возраст(лет):*</label>
-      <input class="client-info__input-text" type="text" id="client__age" name="age" placeholder="Введите возраст" value="7">
+      <label class="client-info__label label" for="client__age">Возраст(лет):*</label>
+      <input class="client-info__input-text input" type="text" id="client__age" name="age" placeholder="Введите возраст" value="7">
 
       <div class="client-info__wrapper">
-        <input class="client-info__input-radio client-info__input-radio_selected" type="radio" id="client__reason-losing-weight" name="reason" value="Похудение" checked>
-        <label class="client-info__label" for="client__reason-losing-weight">Похудение</label>
+        <input class="client-info__input-radio client-info__input-radio_selected visually-hidden" type="radio" id="client__reason-losing-weight" name="reason" value="Похудение" checked>
+        <label class="client-info__label label" for="client__reason-losing-weight">Похудение</label>
 
-        <input class="client-info__input-radio" type="radio" id="client__reason-mass-gathering" name="reason" value="Набор массы">
-        <label class="client-info__label" for="client__reason-mass-gathering">Набор массы</label>
+        <input class="client-info__input-radio visually-hidden" type="radio" id="client__reason-mass-gathering" name="reason" value="Набор массы">
+        <label class="client-info__label label" for="client__reason-mass-gathering">Набор массы</label>
 
-        <input class="client-info__input-radio" type="radio" id="client__reason-dont-know" name="reason" value="Не знаю(Нужен ваш совет)">
-        <label class="client-info__label" for="client__reason-dont-know">Не знаю(Нужен ваш совет)</label>
+        <input class="client-info__input-radio visually-hidden" type="radio" id="client__reason-dont-know" name="reason" value="Не знаю(Нужен ваш совет)">
+        <label class="client-info__label label" for="client__reason-dont-know">Не знаю(Нужен ваш совет)</label>
       </div>
     </fieldset>
-    <fieldset class="сontact-details">
-      <legend class="сontact-details__caption">Контактные данные (владельца кота)</legend>
+    <fieldset class="programm-form__сontact-details сontact-details">
+      <legend class="сontact-details__caption programm-form__caption">Контактные данные (владельца кота)</legend>
 
-      <label class="сontact-details__label" for="client__email">e-mail:*</label>
-      <input class="сontact-details__input-text" type="email" id="client__email" name="email" placeholder="Введите email" value="kuklachev@gmail.com">
+      <label class="сontact-details__label label" for="client__email">e-mail:*</label>
+      <input class="сontact-details__input-text input" type="email" id="client__email" name="email" placeholder="Введите email" value="kuklachev@gmail.com">
 
-      <label class="сontact-details__label" for="client__telefon">Телефон:*</label>
-      <input class="сontact-details__input-text" type="tel" id="client__telefon" name="telefon" placeholder="Введите телефон" value="8(960)900-60-90">
+      <label class="сontact-details__label label" for="client__telefon">Телефон:*</label>
+      <input class="сontact-details__input-text input" type="tel" id="client__telefon" name="telefon" placeholder="Введите телефон" value="8(960)900-60-90">
     </fieldset>
-    <fieldset class="comments">
-      <legend class="comments__caption">Комментарий</legend>
-      <textarea class="comments__textarea" title="Комментарии" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+    <fieldset class="programm-form__comments comments">
+      <legend class="comments__caption programm-form__caption">Комментарий</legend>
+      <textarea class="comments__textarea textarea" title="Комментарии" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
-    <fieldset class="additionally">
-      <legend class="additionally__caption">Дополнительно</legend>
+    <fieldset class="programm-form__additionally additionally">
+      <legend class="additionally__caption programm-form__caption">Дополнительно</legend>
 
-      <input class="additionally__input-checkbox" type="checkbox" id="client__additionally-sweetener" name="additionally" value="Сахарозаменитель" checked>
-      <label class="additionally__label" for="client__additionally-sweetener">Сахарозаменитель</label>
+      <input class="additionally__input-checkbox visually-hidden" type="checkbox" id="client__additionally-sweetener" name="additionally" value="Сахарозаменитель" checked>
+      <label class="additionally__label label" for="client__additionally-sweetener">Сахарозаменитель</label>
 
-      <input class="additionally__input-checkbox" type="checkbox" id="client__additionally-drinking-water" name="additionally" value="Питьевая вода">
-      <label class="additionally__label" for="client__additionally-drinking-water">Питьевая вода</label>
+      <input class="additionally__input-checkbox visually-hidden" type="checkbox" id="client__additionally-drinking-water" name="additionally" value="Питьевая вода">
+      <label class="additionally__label label" for="client__additionally-drinking-water">Питьевая вода</label>
 
-      <input class="additionally__input-checkbox" type="checkbox" id="client__additionally-milk" name="additionally" value="Молоко">
-      <label class="additionally__label" for="client__additionally-milk">Молоко</label>
+      <input class="additionally__input-checkbox visually-hidden" type="checkbox" id="client__additionally-milk" name="additionally" value="Молоко">
+      <label class="additionally__label label" for="client__additionally-milk">Молоко</label>
 
-      <input class="additionally__input-checkbox" type="checkbox" id="client__additionally-vitamins" name="additionally" value="Витамины">
-      <label class="additionally__label" for="client__additionally-vitamins">Витамины</label>
+      <input class="additionally__input-checkbox visually-hidden" type="checkbox" id="client__additionally-vitamins" name="additionally" value="Витамины">
+      <label class="additionally__label label" for="client__additionally-vitamins">Витамины</label>
     </fieldset>
-    <button class="programm__button button" type="submit" title="Отправить заявку">Отправить заявку</button>
-    <p class="programm__text-tutorial">* — Обязательные поля</p>
+    <button class="programm-form__button button" type="submit" title="Отправить заявку">Отправить заявку</button>
+    <p class="programm-form__text-tutorial">* — Обязательные поля</p>
   </form>
 </section>
-<section class="contact contact_bg">
+<section class="contact contact_background">
   <div class="contact__wrapper">
     <h2 class="contact__caption">Приглашаем к сотрудничеству дилеров!</h2>
     <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -88,8 +88,8 @@
   <img class="contact__map" src="http://placehold.it/320x362" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
 </section>
 <footer class="footer">
-  <img class="footer__logo" src="http://placehold.it/128x24" width="128" height="24" alt="CAT ENERGY">
-  <nav class="footer-social">
+  <a class="footer__logo" href="index.html" title="CAT ENERGY"></a>
+  <nav class="footer-social social">
     <ul class="social__list">
       <li class="social__list-item">
         <a class="social__link social__link_icon-vk" href="#" title="vk.com"></a>
@@ -102,7 +102,7 @@
       </li>
     </ul>
   </nav>
-  <div class="copyright">
+  <div class="footer__copyright copyright">
     <span class="copyright__text">HTML Academy</span>
     <a class="copyright__logo" href="https://htmlacademy.ru/" title="htmlacademy.ru"></a>
   </div>

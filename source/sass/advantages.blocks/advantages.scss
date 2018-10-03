@@ -1,0 +1,12 @@
+.additional {}
+
+/*элементы блока advantages*/
+@import "advantages__caption";
+@import "advantages__list";
+@import "advantages__list-item";
+
+/*модификаторы блока advantages*/
+@import "advantages__list-item_icon-tableware.scss";
+@import "advantages__list-item_icon-clock.scss";
+@import "advantages__list-item_icon-glass.scss";
+@import "advantages__list-item_icon-leaf.scss";

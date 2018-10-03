@@ -1,0 +1,15 @@
+.customer {
+  background-color: #f2f2f2;
+}
+
+/*элементы блока customer*/
+@import "customer__caption.scss";
+@import "customer__text.scss";
+@import "customer__advantages.scss";
+@import "customer__sub-advantages.scss";
+@import "customer__switch.scss";
+@import "customer__label.scss";
+
+/*подблоки customer*/
+@import "customer-view/customer-view";
+@import "customer-wrapper/customer-wrapper";

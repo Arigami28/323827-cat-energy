@@ -1,0 +1,9 @@
+.catalog {}
+
+/*элементы блока catalog*/
+@import "catalog__extension.scss";
+@import "catalog__item.scss";
+
+/*подблоки catalog*/
+@import "catalog-item/caralog-item.scss";
+@import "catalog-extension/catalog-extension.scss";

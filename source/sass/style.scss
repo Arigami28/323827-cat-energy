@@ -1,0 +1,55 @@
+/*--начало normalize--*/
+@import "normalize.scss";
+/*--конец normalize--*/
+
+/*--подключение шрифтов--*/
+@import "fonts.scss";
+
+/*--позиционирование основных блоков страницы--*/
+@import "page/page.scss";
+
+/*--начало header--*/
+@import "header.blocks/header";
+/*--конец header--*/
+
+/*--начало promo--*/
+@import "promo.blocks/promo.scss";
+/*--конец promo--*/
+
+/*--начало categories--*/
+@import "categories.blocks/categories.scss";
+/*--конец categories--*/
+
+/*--начало advantages--*/
+@import "advantages.blocks/advantages.scss";
+/*--конец advantages--*/
+
+/*--начало customer--*/
+@import "customer.blocks/customer.scss";
+/*--конец customer--*/
+
+/*--начало contact--*/
+@import "contact.blocks/contact.scss";
+/*--конец customer--*/
+
+/*--начало programm--*/
+@import "programm.blocks/programm.scss";
+/*--конец customer--*/
+
+/*--начало footer--*/
+@import "footer.blocks/footer.scss";
+/*--конец footer--*/
+
+
+/*--служебные классы--*/
+/*cокрытие элементов сайта*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

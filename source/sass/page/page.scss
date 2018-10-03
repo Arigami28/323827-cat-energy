@@ -1,0 +1,18 @@
+.page {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: $Arial;
+  color: #111111;
+}
+
+/*элементы блока page*/
+@import "page__header";
+@import "page__promo";
+@import "page__categories";
+@import "page__advantages";
+@import "page__customer";
+@import "page__catalog";
+@import "page__additional";
+@import "page__contact";
+@import "page__footer";

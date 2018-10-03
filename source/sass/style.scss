@@ -1,45 +1,34 @@
 /*--начало normalize--*/
-@import "normalize.scss";
+@import "normalize.css";
 /*--конец normalize--*/
-
 /*--подключение шрифтов--*/
 @import "fonts.scss";
-
 /*--позиционирование основных блоков страницы--*/
-@import "page/page.scss";
-
+@import "blocks/page";
 /*--начало header--*/
-@import "header.blocks/header";
+@import "blocks/header";
 /*--конец header--*/
-
 /*--начало promo--*/
-@import "promo.blocks/promo.scss";
+@import "blocks/promo";
 /*--конец promo--*/
-
 /*--начало categories--*/
-@import "categories.blocks/categories.scss";
+@import "blocks/categories";
 /*--конец categories--*/
-
 /*--начало advantages--*/
-@import "advantages.blocks/advantages.scss";
+@import "blocks/advantages";
 /*--конец advantages--*/
-
 /*--начало customer--*/
-@import "customer.blocks/customer.scss";
+@import "blocks/customer";
 /*--конец customer--*/
-
 /*--начало contact--*/
-@import "contact.blocks/contact.scss";
+@import "blocks/contact";
 /*--конец customer--*/
-
 /*--начало programm--*/
-@import "programm.blocks/programm.scss";
+@import "blocks/programm";
 /*--конец customer--*/
-
 /*--начало footer--*/
-@import "footer.blocks/footer.scss";
+@import "blocks/footer";
 /*--конец footer--*/
-
 
 /*--служебные классы--*/
 /*cокрытие элементов сайта*/

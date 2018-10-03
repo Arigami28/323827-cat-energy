@@ -1,0 +1,21 @@
+/*элементы блока advantages*/
+.advantages__caption {
+  font-family: $Oswald;
+  font-size: 36px;
+  line-height: 1.67;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__list-item {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: #444444;
+}

@@ -5,30 +5,23 @@
 @import "fonts.scss";
 /*--позиционирование основных блоков страницы--*/
 @import "blocks/page";
-/*--начало header--*/
 @import "blocks/header";
-/*--конец header--*/
-/*--начало promo--*/
+@import "blocks/header-navigation";
 @import "blocks/promo";
-/*--конец promo--*/
-/*--начало categories--*/
 @import "blocks/categories";
-/*--конец categories--*/
-/*--начало advantages--*/
 @import "blocks/advantages";
-/*--конец advantages--*/
-/*--начало customer--*/
+@import "blocks/catalog";
+@import "blocks/catalog-item";
+@import "blocks/catalog-extension";
+@import "blocks/additional";
+@import "blocks/additional-item";
+@import "blocks/additional-promo";
 @import "blocks/customer";
-/*--конец customer--*/
-/*--начало contact--*/
+@import "blocks/customer-view";
 @import "blocks/contact";
-/*--конец customer--*/
-/*--начало programm--*/
-@import "blocks/programm";
-/*--конец customer--*/
-/*--начало footer--*/
 @import "blocks/footer";
-/*--конец footer--*/
+@import "blocks/copyright";
+@import "blocks/social";
 
 /*--служебные классы--*/
 /*cокрытие элементов сайта*/

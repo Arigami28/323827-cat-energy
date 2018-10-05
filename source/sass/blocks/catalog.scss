@@ -1,8 +1,14 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #f2f2f2;
+}
 /*элементы catalog */
 .catalog__caption {
   font-family: $Oswald;
   font-size: 36px;
   line-height: 1.67;
-  text-align: left;
   color: #111111;
+  margin: 0;
 }

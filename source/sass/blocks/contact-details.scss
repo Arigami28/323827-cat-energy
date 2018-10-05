@@ -1,0 +1,11 @@
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+}
+
+.contact-details__wrapper {
+  display: flex;
+  flex-direction: row;
+}

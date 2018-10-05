@@ -1,8 +1,8 @@
 /*--начало normalize--*/
-@import "normalize.css";
+@import "normalize";
 /*--конец normalize--*/
 /*--подключение шрифтов--*/
-@import "fonts.scss";
+@import "fonts";
 /*--позиционирование основных блоков страницы--*/
 @import "blocks/page";
 @import "blocks/header";
@@ -19,9 +19,13 @@
 @import "blocks/customer";
 @import "blocks/customer-view";
 @import "blocks/programm-form";
+@import "blocks/client-info";
+@import "blocks/contact-details";
 @import "blocks/label";
 @import "blocks/input";
 @import "blocks/textarea";
+@import "blocks/comments";
+@import "blocks/complementary";
 @import "blocks/contact";
 @import "blocks/footer";
 @import "blocks/copyright";

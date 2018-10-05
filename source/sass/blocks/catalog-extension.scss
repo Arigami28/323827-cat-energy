@@ -1,13 +1,24 @@
+.catalog-extension {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+}
+
 .catalog-extension__caption {
   font-family: $Oswald;
   font-size: 16px;
   line-height: 1.25;
+  margin: 0;
 }
 
 .catalog-extension__text {
   font-size: 12px;
   line-height: 1.33;
   color: #444444;
+  margin: 0;
 }
 
 .catalog-extension__button {

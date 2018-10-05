@@ -1,3 +1,10 @@
+.additional-item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  border-top: 1px solid #f2f2f2;
+}
+
 .additional-item__caption {
   font-family: $Oswald;
   font-size: 16px;
@@ -9,12 +16,16 @@
 }
 
 .additional-item__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 1;
   color: #444444;
 }
 
 .additional-item__button {
+  align-self: center;
   font-family: $Oswald;
   font-size: 16px;
   line-height: 1.25;

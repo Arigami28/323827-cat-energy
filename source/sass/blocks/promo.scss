@@ -1,0 +1,39 @@
+.promo {
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+  background: $white url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  min-width: 320px;
+}
+
+/*элементы блока promo*/
+.promo__caption {
+  width: 245px;
+  height: 74px;
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__link {
+  font-size: 14px;
+  line-height: 1.29;
+  margin-bottom: 22px;
+}
+
+.promo__sub-caption {
+  display: block;
+  width: 198px;
+  height: 16px;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+  margin: 0;
+  padding: 0;
+}

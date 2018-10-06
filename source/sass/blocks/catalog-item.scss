@@ -1,0 +1,28 @@
+.catalog-item {
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 210px;
+  border-top: 1px solid $greyish__light;
+}
+
+.catalog-item__wrapper {
+  @include flex-row;
+  justify-content: center;
+  width: 100%;
+}
+
+.catalog-item__caption {
+  max-width: 90px;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.catalog-item__row {
+  font-size: 12px;
+  line-height: 1.33;
+  color: $greyish;
+}

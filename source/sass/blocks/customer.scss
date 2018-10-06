@@ -1,0 +1,41 @@
+.customer {
+  background-color: $greyish__light;
+}
+
+/*элементы блока customer*/
+.customer__caption {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 1.67;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.customer__advantages {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.customer__sub-advantages {
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: $greyish;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+}
+
+.customer__text {
+  font-size: 14px;
+  line-height: 1.29;
+  color: $greyish;
+  margin: 0 20px;
+  padding: 0;
+}

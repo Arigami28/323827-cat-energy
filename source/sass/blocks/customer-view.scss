@@ -1,0 +1,23 @@
+/*элементы блока customer-view*/
+.customer-view__caption {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.customer-view__text {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.customer-view__img {
+  margin: 0;
+  padding: 0;
+}

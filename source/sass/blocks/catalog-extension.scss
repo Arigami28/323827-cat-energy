@@ -1,0 +1,32 @@
+.catalog-extension {
+  @include flex-column;
+  align-items: center;
+  border-top: 1px solid $greyish__light;
+  border-bottom: 1px solid $greyish__light;
+  width: 100%;
+}
+
+.catalog-extension__caption {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.catalog-extension__text {
+  font-size: 12px;
+  line-height: 1.33;
+  color: $greyish;
+  margin: 0;
+}
+
+.catalog-extension__button {
+  @include reset-link-style;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: $greyish;
+  background-color: $greyish__light;
+}

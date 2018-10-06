@@ -1,0 +1,38 @@
+/*элементы блока social*/
+.social__list {
+  @include flex-row;
+  @include reset-list-style;
+  justify-content: center;
+  align-items: center;
+  min-height: 62px;
+  width: 280px;
+  border-top: 1px solid $color-social__list-border;
+  border-bottom: 1px solid $color-social__list-border;
+}
+
+.social__list-item {
+  margin-right: 40px;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__link_icon-vk {
+  background: $greyish__light url("../img/icon-vk-mobile.svg") center no-repeat;
+  background-size: 22px 12px;
+  width: 22px;
+  height: 12px;
+}
+
+.social__link_icon-instagram {
+  background: $greyish__light url("../img/icon-insta-mobile.svg") center no-repeat;
+  width: 17px;
+  height: 17px;
+}
+
+.social__link_icon-facebook {
+  background: $greyish__light url("../img/icon-fb-mobile.svg") center no-repeat;
+  width: 10px;
+  height: 19px;
+}

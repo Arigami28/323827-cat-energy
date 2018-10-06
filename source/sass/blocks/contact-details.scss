@@ -1,0 +1,9 @@
+.contact-details {
+  @include flex-column;
+  padding: 0;
+  border: none;
+}
+
+.contact-details__wrapper {
+  @include flex-row;
+}

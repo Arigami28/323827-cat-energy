@@ -1,0 +1,30 @@
+.programm-form {
+  @include flex-column;
+  align-items: flex-start;
+}
+
+.programm-form__main-caption {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 1.67;
+}
+
+.programm-form__caption {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.programm-form__text-tutorial {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $greyish;
+  margin: 0;
+  padding: 0;
+}
+
+.programm-form__wrapper {
+  @include flex-column;
+  width: 100%;
+  align-items: center;
+}

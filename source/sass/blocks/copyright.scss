@@ -1,0 +1,20 @@
+.copyright {
+  @include flex-row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*элементы блока copyright*/
+.copyright__text {
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  color: $greyish;
+}
+
+.copyright__logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background: $greyish__light url("../img/htmlacademy.svg") no-repeat;
+}

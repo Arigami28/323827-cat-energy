@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  min-width: 320px;
+  min-height: 65px;
+  margin: 0 0 0 0;
+  padding: 1px 0 0 0;
+}
+
+/*элементы блока header*/
+.header__logo {
+  display: block;
+  width: 191px;
+  height: 39px;
+  background: $white url("../../img/logo-mobile.svg") no-repeat;
+  padding: 0;
+  margin: 11px 109px 15px 20px;
+}

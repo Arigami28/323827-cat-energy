@@ -6,38 +6,33 @@
   position: absolute;
   top: 23px;
   right: 23px;
-  background: #ffffff url("../../img/icon-close.svg") no-repeat;
+  background: $white url("../../img/icon-close.svg") no-repeat;
   border: none;
   cursor: pointer;
 }
 
 .header-navigation__link {
-  font-family: $Oswald;
+  @include reset-link-style;
+  font-family: $oswald;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #111111;
+  color: $black__dark;
   width: 319px;
   padding: 24px 0 24px 0;
   margin: 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $greyish__lighter;
 }
 
 .header-navigation__list {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
+  @include reset-list-style;
   align-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .header-navigation__list-item {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: center;
   margin: 0;
   padding: 0;

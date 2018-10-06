@@ -1,7 +1,6 @@
 .footer {
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
+  background-color: $greyish__light;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -11,5 +10,5 @@
 .footer__logo {
   width: 128px;
   height: 24px;
-  background: #f2f2f2 url("../img/logo-footer.svg") no-repeat;
+  background: $greyish__light url("../img/logo-footer.svg") no-repeat;
 }

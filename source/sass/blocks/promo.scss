@@ -1,9 +1,8 @@
 .promo {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   justify-content: center;
-  background: #ffffff url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  background: $white url("../../img/index-background-mobile@1x.jpg") no-repeat;
   min-width: 320px;
 }
 
@@ -11,15 +10,11 @@
 .promo__caption {
   width: 245px;
   height: 74px;
-  font-family: $Oswald;
+  font-family: $oswald;
   font-size: 36px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   margin: 0;
   padding: 0;
 }
@@ -34,15 +29,11 @@
   display: block;
   width: 198px;
   height: 16px;
-  font-family: $Oswald;
+  font-family: $oswald;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   margin: 0;
   padding: 0;
 }

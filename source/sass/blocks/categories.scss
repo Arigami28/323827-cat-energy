@@ -1,29 +1,28 @@
 /*элементы блока categories*/
 .categories__block {
-  background-color: #f2f2f2;
+  background-color: $greyish__light;
   width: 280px;
   min-height: 266px;
   margin: 0 20px 20px 20px;
 }
 
 .categories__caption {
-  font-family: $Oswald;
+  font-family: $oswald;
   font-size: 24px;
   line-height: 1.54;
   text-transform: uppercase;
-  color: #111111;
+  color: $black__dark;
   margin: 0;
   padding: 0;
 }
 
 .categories__link {
-  font-family: $Oswald;
+  @include reset-link-style;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 1;
   text-align: left;
-  color: #111111;
-  text-transform: uppercase;
-  text-decoration: none;
+  color: $black__dark;
   margin: 0;
   padding: 0;
 }
@@ -31,7 +30,7 @@
 .categories__text {
   font-size: 14px;
   line-height: 1.29;
-  color: #444444;
+  color: $greyish;
   margin: 0;
   padding: 0;
 }

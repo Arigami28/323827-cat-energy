@@ -1,36 +1,33 @@
 .additional-item {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   width: 280px;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid $greyish__light;
 }
 
 .additional-item__caption {
-  font-family: $Oswald;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 1;
-  color: #222222;
+  color: $black__lighter;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
 
 .additional-item__description {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: space-between;
   font-size: 14px;
   line-height: 1;
-  color: #444444;
+  color: $greyish;
 }
 
 .additional-item__button {
+  @include reset-link-style;
   align-self: center;
-  font-family: $Oswald;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 1.25;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #68b738;
+  color: $white;
+  background-color: $green;
 }

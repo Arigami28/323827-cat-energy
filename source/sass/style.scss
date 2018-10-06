@@ -1,9 +1,8 @@
-/*--начало normalize--*/
 @import "normalize";
-/*--конец normalize--*/
-/*--подключение шрифтов--*/
 @import "fonts";
-/*--позиционирование основных блоков страницы--*/
+@import "variables";
+@import "mixin";
+@import "global";
 @import "blocks/page";
 @import "blocks/header";
 @import "blocks/header-navigation";
@@ -31,16 +30,3 @@
 @import "blocks/copyright";
 @import "blocks/social";
 @import "blocks/button";
-
-/*--служебные классы--*/
-/*cокрытие элементов сайта*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

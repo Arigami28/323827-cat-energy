@@ -1,14 +1,13 @@
 .catalog {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid $greyish__light;
 }
 /*элементы catalog */
 .catalog__caption {
-  font-family: $Oswald;
+  font-family: $oswald;
   font-size: 36px;
   line-height: 1.67;
-  color: #111111;
+  color: $black__dark;
   margin: 0;
 }

@@ -1,28 +1,28 @@
 .catalog-item {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 210px;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid $greyish__light;
 }
 
 .catalog-item__wrapper {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
   justify-content: center;
   width: 100%;
 }
 
 .catalog-item__caption {
-  font-family: $Oswald;
+  max-width: 90px;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 1.25;
+  text-transform: uppercase;
 }
 
 .catalog-item__row {
   font-size: 12px;
   line-height: 1.33;
-  color: #444444;
+  color: $greyish;
 }

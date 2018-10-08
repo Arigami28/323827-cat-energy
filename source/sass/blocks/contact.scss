@@ -1,15 +1,18 @@
 .contact {
   @include flex-column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 0;
+  min-height: 476px;
   padding: 0;
 }
+
 /*элементы блока contact*/
 .contact__wrapper {
   @include flex-row;
-  justify-content: center;
+  align-self: center;
+  justify-content: flex-start;
   width: 280px;
-  margin: 0 20px;
+  margin: 28px  0 26px 0;
 }
 
 .contact__address {
@@ -26,6 +29,7 @@
   width: 50%;
   font-family: $oswald;
   font-size: 16px;
+  font-weight: normal;
   line-height: 1.25;
   text-transform: uppercase;
   margin: 0;
@@ -34,4 +38,42 @@
 
 .contact_background {
   background-color: $greyish__light;
+}
+
+.contact__map {
+  width: 320px;
+  height: 362px;
+  background: $white url("../img/bg-map-mobile@1x.png") bottom no-repeat;
+}
+
+@media (min-width: $width__tablet) {
+  .contact {
+    min-height: 600px;
+  }
+
+  .contact__wrapper {
+    justify-content: space-between;
+    min-height: 83px;
+    width: 628px;
+    margin-bottom: 60px;
+  }
+
+  .contact__caption {
+    font-size: 20px;
+    width: 150px;
+  }
+
+  .contact__address {
+    @include flex-column;
+    justify-content: space-between;
+    width: 155px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .contact__map {
+    width: 768px;
+    height: 400px;
+    background: $white url("../img/bg-map-tablet@1x.png") bottom no-repeat;
+  }
 }

@@ -1,8 +1,14 @@
 .page {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 320px;
+  width: $width__mobil;
   font-family: $arial;
   color: $black__dark;
   background-color: $white;
+}
+
+@media (min-width: $width__tablet) {
+  .page {
+    width: $width__tablet;
+  }
 }

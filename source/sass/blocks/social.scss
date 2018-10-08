@@ -1,3 +1,4 @@
+
 /*элементы блока social*/
 .social__list {
   @include flex-row;
@@ -5,34 +6,42 @@
   justify-content: center;
   align-items: center;
   min-height: 62px;
-  width: 280px;
   border-top: 1px solid $color-social__list-border;
   border-bottom: 1px solid $color-social__list-border;
+  width: 280px;
 }
 
 .social__list-item {
-  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 63px;
 }
 
 .social__link {
   display: block;
+  width: 25px;
+  height: 25px;
 }
 
 .social__link_icon-vk {
   background: $greyish__light url("../img/icon-vk-mobile.svg") center no-repeat;
   background-size: 22px 12px;
-  width: 22px;
-  height: 12px;
 }
 
 .social__link_icon-instagram {
   background: $greyish__light url("../img/icon-insta-mobile.svg") center no-repeat;
-  width: 17px;
-  height: 17px;
+  background-size: 17px 17px;
 }
 
 .social__link_icon-facebook {
   background: $greyish__light url("../img/icon-fb-mobile.svg") center no-repeat;
-  width: 10px;
-  height: 19px;
+  background-size: 10px 19px;
+}
+
+@media (min-width: 768px) {
+  .social__list {
+    border: none;
+  }
 }

@@ -1,5 +1,10 @@
 .customer {
+  @include flex-column;
+  align-items: flex-start;
   background-color: $greyish__light;
+  min-height: 705px;
+  margin: 0;
+  padding: 0 20px;
 }
 
 /*элементы блока customer*/
@@ -7,35 +12,54 @@
   font-family: $oswald;
   font-size: 36px;
   line-height: 1.67;
-  margin: 0 20px;
+  font-weight: normal;
+  margin: 17px 0 0 0;
   padding: 0;
 }
 
+.customer__text {
+  width: 266px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $greyish;
+  margin: 23px 0 0 0;
+  padding: 0;
+}
+
+.customer-wrapper {
+  @include flex-row;
+  width: 280px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0 0 0;
+}
+
 .customer__advantages {
+  position: relative;
+  width: 123px;
+  height: 41px;
   font-family: $oswald;
   font-size: 24px;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
+  padding: 13px 0 0 0;
+  border: 1px solid $color-customer__border;
+  border-radius: 3px;
 }
 
 .customer__sub-advantages {
+  position: absolute;
+  bottom: -16px;
+  left: 32px;
+  width: 57px;
   font-family: $arial;
   font-size: 12px;
   line-height: 1;
   text-align: center;
   color: $greyish;
   text-transform: none;
-  margin: 0;
-  padding: 0;
-}
-
-.customer__text {
-  font-size: 14px;
-  line-height: 1.29;
-  color: $greyish;
-  margin: 0 20px;
-  padding: 0;
+  margin: 0 0 0 0;
+  padding: 0 0;
 }

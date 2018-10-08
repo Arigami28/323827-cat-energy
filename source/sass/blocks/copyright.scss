@@ -1,20 +1,39 @@
 .copyright {
   @include flex-row;
-  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  width: 320px;
 }
 
 /*элементы блока copyright*/
 .copyright__text {
   font-size: 16px;
   line-height: 1;
-  text-align: left;
   color: $greyish;
+  margin: 0 0 0 18px;
 }
 
 .copyright__logo {
   display: block;
   width: 27px;
-  height: 34px;
-  background: $greyish__light url("../img/htmlacademy.svg") no-repeat;
+  height: 35px;
+  background: $greyish__light url("../img/htmlacademy.svg") center no-repeat;
+  background-size: 145%;
+  margin: 0 20px 0 0;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    width: 164px;
+    justify-content: flex-end;
+  }
+
+  .copyright__text {
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .copyright__logo {
+    padding: 0;
+  }
 }

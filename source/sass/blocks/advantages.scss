@@ -2,7 +2,7 @@
   @include flex-column;
   padding: 0 20px;
   width: 280px;
-  min-height: 427px;
+  min-height: 750px;
 }
 
 /*элементы блока advantages*/
@@ -28,4 +28,45 @@
   line-height: 1.29;
   margin: 0 0 26px 0;
   color: $greyish;
+}
+
+@media (min-width: $width__tablet) {
+  .advantages {
+    padding: 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .advantages__caption {
+    margin: 15px 0 185px 0;
+    width: 381px;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .advantages__list {
+    @include flex-row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 635px;
+    min-height: 387px;
+  }
+
+  .advantages__list-item {
+    min-height: 64px;
+    width: 244px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 140px 0 0;
+    padding-top: 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(4n),
+    &:nth-child(3n) {
+      align-self: flex-end;
+    }
+  }
 }

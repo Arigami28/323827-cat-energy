@@ -1,12 +1,19 @@
+.programm {
+  padding: 0 20px;
+}
+
 .programm-form {
   @include flex-column;
   align-items: flex-start;
+  border-top: 1px solid $greyish__lighter;
 }
 
 .programm-form__main-caption {
   font-family: $oswald;
   font-size: 36px;
   line-height: 1.67;
+  font-weight: normal;
+  margin: 15px 0 0 0;
 }
 
 .programm-form__caption {
@@ -27,4 +34,8 @@
   @include flex-column;
   width: 100%;
   align-items: center;
+}
+
+.programm-form__client-info {
+  margin: 25px 0 0 0;
 }

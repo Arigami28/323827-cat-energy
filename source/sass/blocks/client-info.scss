@@ -1,19 +1,51 @@
 .client-info {
   @include flex-column;
   border: none;
+  outline: 1px solid green;
   padding: 0;
+  width: 280px;
 }
 
 .client-info__wrapper {
   @include flex-row;
 
+  align-items: center;
+  flex-wrap: nowrap;
+  outline: 1px solid red;
+  margin-bottom: 13px;
+
   &:last-child {
-    flex-direction: column;
+    justify-content: flex-end;
   }
 }
 
 .client-info__caption {
+  width: 226px;
   font-family: $oswald;
   font-size: 14px;
   line-height: 1.29;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0 0 39px 0;
+}
+
+.client-info__wrapper_age {
+  margin-bottom: 23px;
+}
+
+.client-info__input-text {
+  flex-grow: 1;
+}
+
+.client-info__label {
+  align-self: center;
+  margin: 0 13px 0 0;
+}
+
+.client-info__label_weight {
+  margin: 0 17px 0 0;
+}
+
+.client-info__input-radio {
+  display: none;
 }

@@ -59,7 +59,7 @@
   border-radius: 3px;
   margin-right: 30px;
 
-  &:nth-child(2){
+  &:nth-child(2) {
     margin-right: 0;
   }
 }
@@ -91,7 +91,6 @@
     margin: 51px 0 0 0;
     width: 708px;
     flex-wrap: wrap;
-    outline: 1px solid gold;
   }
 
   .customer__caption {
@@ -107,7 +106,6 @@
     font-size: 20px;
     line-height: 1;
     margin: 0 0 0 165px;
-    outline: 1px solid green;
   }
 
   .customer__text {

@@ -1,22 +1,15 @@
 .client-info {
   @include flex-column;
   border: none;
-  outline: 1px solid green;
-  padding: 0;
+  padding: 0 20px;
   width: 280px;
 }
 
 .client-info__wrapper {
   @include flex-row;
-
   align-items: center;
   flex-wrap: nowrap;
-  outline: 1px solid red;
   margin-bottom: 13px;
-
-  &:last-child {
-    justify-content: flex-end;
-  }
 }
 
 .client-info__caption {

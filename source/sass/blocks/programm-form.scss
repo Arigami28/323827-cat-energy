@@ -1,11 +1,14 @@
 .programm {
-  padding: 0 20px;
+  width: 320px;
+  padding: 0;
+  margin: 0;
 }
 
 .programm-form {
   @include flex-column;
   align-items: flex-start;
   border-top: 1px solid $greyish__lighter;
+  min-height: 1358px;
 }
 
 .programm-form__main-caption {
@@ -13,13 +16,14 @@
   font-size: 36px;
   line-height: 1.67;
   font-weight: normal;
-  margin: 15px 0 0 0;
+  margin: 15px 0 0 20px;
 }
 
 .programm-form__caption {
   font-family: $oswald;
   font-size: 24px;
   line-height: 1;
+  font-weight: normal;
 }
 
 .programm-form__text-tutorial {

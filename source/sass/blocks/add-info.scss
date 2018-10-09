@@ -1,0 +1,24 @@
+.add-info {
+  @include flex-column;
+  align-items: flex-start;
+  min-height: 156px;
+  width: 280px;
+  margin: 0;
+  padding: 0 20px;
+  border: none;
+  border-top: 1px solid $greyish__lighter;
+  border-bottom: 1px solid $greyish__lighter;
+}
+
+.add-info__label {
+  margin: 25px 0 0 45px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.add-info__input-radio {
+  display: none;
+}

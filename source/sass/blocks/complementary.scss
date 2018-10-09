@@ -1,5 +1,21 @@
 .complementary {
   @include flex-column;
+  min-height: 262px;
+  width: 280px;
   border: none;
-  padding: 0;
+  padding: 0 20px;
+  outline: 1px solid red;
+  margin: 0;
+}
+
+.complementary__caption {
+  margin: 13px 0 40px 0;
+}
+
+.complementary__label {
+  margin: 0 0 25px 45px;
+}
+
+.complementary__input-checkbox {
+  display: none;
 }

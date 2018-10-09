@@ -1,7 +1,14 @@
 .additional-item {
   @include flex-column;
   width: 280px;
+  min-height: 128px;
   border-top: 1px solid $greyish__light;
+  border-bottom: 1px solid $greyish__light;
+  margin-top: -1px;
+
+  &:last-child {
+    margin-top: 0;
+  }
 }
 
 .additional-item__caption {
@@ -10,7 +17,8 @@
   line-height: 1;
   color: $black__lighter;
   text-transform: uppercase;
-  margin: 0;
+  font-weight: normal;
+  margin: 13px 0 0 2px;
   padding: 0;
 }
 
@@ -20,6 +28,7 @@
   font-size: 14px;
   line-height: 1;
   color: $greyish;
+  margin: 13px 0 0 0;
 }
 
 .additional-item__button {

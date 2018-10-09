@@ -1,14 +1,18 @@
 .additional-promo {
+  min-height: 363px;
+}
+
+.additional-promo__wrapper {
   @include flex-row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 280px;
-  min-height: 289px;
-  background: $white url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  height: 289px;
+  margin: 40px 0 0 0;
+  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
 }
 
 .additional-promo__text {
-  display: block;
   width: 159px;
   height: 56px;
   margin: 0;
@@ -16,4 +20,6 @@
   line-height: 1.25;
   text-align: center;
   color: $white;
+  margin-bottom: 30px;
 }
+

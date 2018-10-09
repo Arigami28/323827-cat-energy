@@ -1,6 +1,8 @@
 .catalog {
   @include flex-column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+
   border-top: 1px solid $greyish__light;
 }
 /*элементы catalog */
@@ -8,6 +10,8 @@
   font-family: $oswald;
   font-size: 36px;
   line-height: 1.67;
+  font-weight: normal;
   color: $black__dark;
-  margin: 0;
+  margin: 0 0 0 20px;
+  padding: 15px 0 28px 0;
 }

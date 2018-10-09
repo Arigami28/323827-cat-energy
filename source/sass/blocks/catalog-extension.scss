@@ -3,14 +3,16 @@
   align-items: center;
   border-top: 1px solid $greyish__light;
   border-bottom: 1px solid $greyish__light;
+  min-height: 210px;
   width: 100%;
 }
 
 .catalog-extension__caption {
   font-family: $oswald;
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
-  margin: 0;
+  margin: 80px 0 0 0;
   text-transform: uppercase;
 }
 
@@ -18,7 +20,7 @@
   font-size: 12px;
   line-height: 1.33;
   color: $greyish;
-  margin: 0;
+  margin: 9px 0 0 0;
 }
 
 .catalog-extension__button {

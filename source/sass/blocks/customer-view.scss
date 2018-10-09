@@ -5,16 +5,6 @@
   padding: 0;
 }
 /*элементы блока customer-view*/
-.customer-view__caption {
-  font-family: $oswald;
-  font-size: 14px;
-  line-height: 1.43;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin: 34px 20px 0 47px;
-  padding: 0;
-}
-
 .customer-view__text {
   font-family: $oswald;
   font-size: 16px;
@@ -35,4 +25,24 @@
   justify-content: space-between;
   align-items: center;
   margin: 31px 0 0 23px;
+}
+
+@media (min-width: 768px) {
+  .customer-view {
+    justify-content: flex-end;
+    align-items: center;
+    width: 583px;
+    height: 573px;
+    outline: 1px solid red;
+    margin: 70px 0 0 50px;
+  }
+
+  .customer-view__text {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .customer-view-wrapper {
+    width: 575px;
+  }
 }

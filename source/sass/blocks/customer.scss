@@ -38,7 +38,7 @@
 
 .customer-wrapper {
   @include flex-row;
-  width: 280px;
+  width: $block-size-280px;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;

@@ -11,7 +11,7 @@
   @include flex-row;
   align-self: center;
   justify-content: flex-start;
-  width: 280px;
+  width: $block-size-280px;
   margin: 28px  0 26px 0;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .contact__map {
-  width: 320px;
+  width: $block-size-320px;
   height: 362px;
   background: $white url("../img/bg-map-mobile@1x.png") bottom no-repeat;
 }

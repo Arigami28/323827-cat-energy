@@ -3,7 +3,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   min-height: 208px;
-  width: 280px;
+  width: $block-size-280px;
   padding: 0 20px;
   margin: 0;
   border-top: 1px solid $greyish__light;
@@ -12,7 +12,7 @@
 .catalog-item__wrapper {
   @include flex-row;
   justify-content: flex-start;
-  width: 100%;
+  width: $block-size-280px;
 }
 
 .catalog-item__images {

@@ -2,7 +2,7 @@
   @include flex-row;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  width: $block-size-320px;
 }
 
 /*элементы блока copyright*/

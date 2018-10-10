@@ -48,14 +48,15 @@
 
 @media (min-width: $width__tablet) {
   .contact {
-    min-height: 600px;
+    min-height: 598px;
+    justify-content: flex-end;
   }
 
   .contact__wrapper {
     justify-content: space-between;
     min-height: 83px;
     width: 628px;
-    margin-bottom: 60px;
+    margin: 0  0 55px 0;
   }
 
   .contact__caption {
@@ -65,15 +66,22 @@
 
   .contact__address {
     @include flex-column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 155px;
     font-size: 16px;
     line-height: 1.25;
+    text-align: right;
+    font-weight: normal;
+    padding: 0;
+  }
+
+  .contact__address-city {
+    margin: 18px 0 0 0;
   }
 
   .contact__map {
     width: 768px;
-    height: 400px;
+    height: 395px;
     background: $white url("../img/bg-map-tablet@1x.png") bottom no-repeat;
   }
 }

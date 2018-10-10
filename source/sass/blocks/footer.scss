@@ -24,10 +24,13 @@
     @include flex-row;
     padding-left: 30px;
     padding-right: 30px;
-    min-height: 150px;
+    min-height: 152px;
+    justify-content: space-between;
   }
 
   .footer__logo {
-    margin-top: 0;
+    width: 130px;
+    margin: 0;
+    background-size: 100%;
   }
 }

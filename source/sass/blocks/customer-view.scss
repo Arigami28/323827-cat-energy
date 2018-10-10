@@ -24,6 +24,7 @@
   width: 239px;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
   margin: 31px 0 0 23px;
 }
 
@@ -31,18 +32,23 @@
   .customer-view {
     justify-content: flex-end;
     align-items: center;
-    width: 583px;
+    width: 708px;
     height: 573px;
-    outline: 1px solid red;
-    margin: 70px 0 0 50px;
+    margin: 70px 0 0 0;
   }
 
   .customer-view__text {
     font-size: 20px;
     line-height: 1;
+    margin: 0;
   }
 
   .customer-view-wrapper {
-    width: 575px;
+    width: 570px;
+    margin: 0 0 0 0;
+  }
+
+  .customer-view__img {
+    margin: 0;
   }
 }

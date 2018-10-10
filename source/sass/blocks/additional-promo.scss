@@ -22,3 +22,25 @@
   color: $white;
   margin-bottom: 30px;
 }
+
+@media (min-width: $width__tablet) {
+  .additional-promo {
+    min-height: 347px;
+  }
+
+  .additional-promo__wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    margin: 70px 0 0 0;
+    width: 708px;
+    height: 200px;
+    background: $green url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .additional-promo__text {
+    margin: 0 115px 0 0;
+    width: 170px;
+    text-align: left;
+  }
+}

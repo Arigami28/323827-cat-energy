@@ -15,3 +15,21 @@
   margin: 0 0 0 20px;
   padding: 15px 0 28px 0;
 }
+
+@media (min-width: $width__tablet) {
+  .catalog {
+    padding: 0 30px;
+  }
+
+  .catalog__caption {
+    font-size: 60px;
+    line-height: 1;
+    margin: 55px 0 81px 0;
+    padding: 0;
+  }
+
+  .catalog__wrapper {
+    @include flex-row;
+    flex-wrap: wrap;
+  }
+}

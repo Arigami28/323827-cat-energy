@@ -13,3 +13,16 @@
   line-height: 1;
   margin: 26px 0 34px 0;
 }
+
+@media (min-width: $width__tablet) {
+  .additional {
+    padding: 0 30px;
+    outline: 1px solid red;
+  }
+
+  .additional__caption {
+    font-size: 36px;
+    line-height: 1;
+    margin: 11px 0 80px 37px;
+  }
+}

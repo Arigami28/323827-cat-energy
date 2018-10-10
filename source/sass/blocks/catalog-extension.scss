@@ -32,3 +32,27 @@
   color: $greyish;
   background-color: $greyish__light;
 }
+
+@media (min-width: $width__tablet) {
+  .catalog-extension {
+    align-self: baseline;
+    border: 1px solid $greyish__light;
+    height: 430px;
+    width: 322px;
+    margin: 84px 0 0 0;
+    padding: 0;
+  }
+
+  .catalog-extension__caption {
+    width: 150px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .catalog-extension__text {
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+  }
+}

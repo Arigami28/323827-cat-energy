@@ -81,6 +81,8 @@
 
 @media (min-width: $width__tablet) {
   .customer {
+    background-color: $white;
+    background-image: linear-gradient(to top, $greyish__light 460px, transparent 460px);
     min-height: 1081px;
     padding: 0 30px;
   }

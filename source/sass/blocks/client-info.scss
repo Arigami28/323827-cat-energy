@@ -1,7 +1,7 @@
 .client-info {
   @include flex-column;
   border: none;
-  padding: 0 20px;
+  padding: 0;
   width: $block-size-280px;
 }
 
@@ -41,4 +41,32 @@
 
 .client-info__input-radio {
   display: none;
+}
+
+@media (min-width: $width__tablet) {
+  .client-info {
+    width: 670px;
+    padding: 0 38px 0 0;
+    margin: 0 0 0 0;
+  }
+
+  .client-info__caption {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 350px;
+    margin: 55px 0 65px 40px;
+  }
+
+  .client-info__wrapper {
+    margin: 0 0 20px 35px;
+  }
+
+  .client-info__label {
+    padding: 0;
+    margin: 0 16px 0 7px;
+  }
+
+  .client-info__label_weight {
+    margin-right: 19px;
+  }
 }

@@ -3,12 +3,12 @@
   min-height: 262px;
   width: $block-size-280px;
   border: none;
-  padding: 0 20px;
-  outline: 1px solid red;
+  padding: 0;
   margin: 0;
 }
 
 .complementary__caption {
+  font-weight: normal;
   margin: 13px 0 40px 0;
 }
 
@@ -18,4 +18,44 @@
 
 .complementary__input-checkbox {
   display: none;
+}
+
+.complementary__wrapper {
+  @include flex-column;
+}
+
+@media (min-width: $width__tablet) {
+  .complementary {
+    width: 708px;
+    min-height: 282px;
+  }
+
+  .complementary__caption {
+    margin: 68px 0 0 40px;
+  }
+
+  .complementary__wrapper {
+    @include flex-row;
+    justify-content: flex-start;
+    width: 576px;
+    height: 120px;
+    flex-wrap: wrap;
+    margin: 57px 0 0 38px;
+  }
+
+  .complementary__label_sweetener {
+    margin: 10px 0 0 60px;
+  }
+
+  .complementary__label_water {
+    margin: 10px 0 0 184px;
+  }
+
+  .complementary__label_milk {
+    margin: 32px 0 0 60px;
+  }
+
+  .complementary__label_vitamins {
+    margin: 32px 0 0 278px;
+  }
 }

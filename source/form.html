@@ -54,11 +54,11 @@
     <fieldset class="programm-form__сontact-details contact-details">
       <h2 class="contact-details__caption programm-form__caption">Контактные данные (владельца&nbsp;кота)</h2>
       <div class="contact-details__wrapper contact-details__wrapper_email">
-        <label class="contact-details__label-email label" for="client__email">e-mail:*</label>
+        <label class="contact-details__label contact-details__label_email  label" for="client__email">e-mail:*</label>
         <input class="contact-details__input-text input" type="email" id="client__email" name="email" placeholder="Введите email" value="kuklachev@gmail.com">
       </div>
       <div class="contact-details__wrapper contact-details__wrapper_telefon">
-        <label class="contact-details__label-telefon label" for="client__telefon">Телефон:*</label>
+        <label class="contact-details__label contact-details__label_telefon label" for="client__telefon">Телефон:*</label>
         <input class="contact-details__input-text input" type="tel" id="client__telefon" name="telefon" placeholder="Введите телефон" value="8 (960) 900-60-90">
       </div>
     </fieldset>
@@ -68,24 +68,24 @@
     </fieldset>
     <fieldset class="programm-form__complementary complementary">
       <h2 class="complementary__caption programm-form__caption">Дополнительно</h2>
+      <div class="complementary__wrapper">
+        <input class="complementary__input-checkbox" type="checkbox" id="client__additionally-sweetener" name="additionally" value="Сахарозаменитель" checked>
+        <label class="complementary__label  complementary__label_sweetener label" for="client__additionally-sweetener">Сахарозаменитель</label>
 
-      <input class="complementary__input-checkbox" type="checkbox" id="client__additionally-sweetener" name="additionally" value="Сахарозаменитель" checked>
-      <label class="complementary__label label" for="client__additionally-sweetener">Сахарозаменитель</label>
+        <input class="complementary__input-checkbox" type="checkbox" id="client__additionally-drinking-water" name="additionally" value="Питьевая вода">
+        <label class="complementary__label complementary__label_water label" for="client__additionally-drinking-water">Питьевая вода</label>
 
-      <input class="complementary__input-checkbox" type="checkbox" id="client__additionally-drinking-water" name="additionally" value="Питьевая вода">
-      <label class="complementary__label label" for="client__additionally-drinking-water">Питьевая вода</label>
+        <input class="complementary__input-checkbox" type="checkbox" id="client__additionally-milk" name="additionally" value="Молоко">
+        <label class="complementary__label complementary__label_milk label" for="client__additionally-milk">Молоко</label>
 
-      <input class="complementary__input-checkbox" type="checkbox" id="client__additionally-milk" name="additionally" value="Молоко">
-      <label class="complementary__label label" for="client__additionally-milk">Молоко</label>
-
-      <input class="complementary__input-checkbox" type="checkbox" id="client__additionally-vitamins" name="additionally" value="Витамины">
-      <label class="complementary__label label" for="client__additionally-vitamins">Витамины</label>
+        <input class="complementary__input-checkbox" type="checkbox" id="client__additionally-vitamins" name="additionally" value="Витамины">
+        <label class="complementary__label complementary__label_vitamins label" for="client__additionally-vitamins">Витамины</label>
+      </div>
     </fieldset>
     <div class="programm-form__wrapper">
       <button class="programm-form__button button" type="submit" title="Отправить заявку">Отправить заявку</button>
       <p class="programm-form__text-tutorial">* — Обязательные поля</p>
     </div>
-
   </form>
 </section>
 <section class="page__contact contact contact_background">

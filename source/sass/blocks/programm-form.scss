@@ -1,9 +1,3 @@
-.programm {
-  width: $block-size-320px;
-  padding: 0;
-  margin: 0;
-}
-
 .programm-form {
   @include flex-column;
   align-items: flex-start;
@@ -16,7 +10,7 @@
   font-size: 36px;
   line-height: 1.67;
   font-weight: normal;
-  margin: 15px 0 0 20px;
+  margin: 15px 0 0 0;
 }
 
 .programm-form__caption {
@@ -42,4 +36,27 @@
 
 .programm-form__client-info {
   margin: 25px 0 0 0;
+}
+
+@media (min-width: $width__tablet) {
+  .programm-form {
+    min-height: auto;
+  }
+
+  .programm-form__main-caption {
+    font-size: 60px;
+    line-height: 1;
+    margin: 55px 0 0 0;
+  }
+
+  .programm-form__caption {
+    font-size: 36px;
+  }
+
+  .programm-form__wrapper {
+    @include flex-row;
+    min-height: 169px;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }

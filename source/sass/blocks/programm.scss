@@ -1,0 +1,12 @@
+.programm {
+  width: $block-size-320px;
+  padding: 0 20px;
+  margin: 0;
+}
+
+@media (min-width: $width__tablet) {
+  .programm {
+    width: 708px;
+    padding: 0 30px;
+  }
+}

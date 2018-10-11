@@ -1,7 +1,7 @@
 .contact-details {
   @include flex-column;
   border: none;
-  padding: 0 20px;
+  padding: 0;
   width: $block-size-280px;
   margin: 0;
 }
@@ -25,14 +25,36 @@
   font-weight: normal;
 }
 
-.contact-details__label-telefon {
-  margin: 0 11px 0 0;
-}
-
-.contact-details__label-email {
+.contact-details__label {
   margin: 0 11px 0 0;
 }
 
 .contact-details__input-text {
   flex-grow: 1;
+}
+
+@media (min-width: $width__tablet) {
+  .contact-details {
+    width: $block-size-768px;
+  }
+
+  .contact-details__caption {
+    margin: 75px 0 76px 40px;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .contact-details__wrapper {
+    width: 633px;
+    margin: 0 0 20px 39px;
+  }
+
+  .contact-details__label_email {
+    margin: 0 18px 0 0;
+    padding-left: 3px;
+  }
+
+  .contact-details__label_telefon {
+    margin: 0 15px 0 0;
+  }
 }

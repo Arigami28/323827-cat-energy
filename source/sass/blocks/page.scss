@@ -12,3 +12,10 @@
     width: $width__tablet;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .page {
+    width: $width__desktop;
+    outline: 1px solid purple;
+  }
+}

@@ -76,3 +76,35 @@
     display: none;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .promo {
+    z-index: -1;
+    position: relative;
+    min-height: 673px;
+    outline: 1px solid red;
+    margin-top: -120px;
+    background: $white url("../../img/index-background-desktop@1x.jpg") right  top -20px  no-repeat;
+  }
+
+  .promo__img {
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+  }
+
+  .promo__caption {
+    margin-top: 199px;
+    margin-left: 192px;
+  }
+
+  .promo__sub-caption {
+    margin-top: 41px;
+    margin-left: 192px;
+  }
+
+  .promo__link {
+    margin-left: 192px;
+  }
+}

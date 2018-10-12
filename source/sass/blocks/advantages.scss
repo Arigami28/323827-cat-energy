@@ -3,6 +3,7 @@
   padding: 0 20px;
   width: $block-size-280px;
   min-height: 427px;
+  outline: 1px solid red;
 }
 
 /*элементы блока advantages*/
@@ -38,7 +39,7 @@
   }
 
   .advantages__caption {
-    margin: 15px 0 185px 0;
+    margin: 15px 0 70px 0;
     width: 381px;
     font-size: 60px;
     line-height: 1;
@@ -49,25 +50,38 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 635px;
-    min-height: 387px;
+    width: 708px;
+    min-height: 557px;
   }
 
   .advantages__list-item {
-    min-height: 64px;
-    width: 244px;
+    display: block;
+    min-height: 285px;
+    width: 354px;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 140px 0 0;
+    margin: 0 0 0  0;
     padding-top: 0;
 
-    &:nth-child(2n) {
-      margin-right: 0;
+    span {
+      display: block;
+      width: 244px;
     }
+  }
 
-    &:nth-child(4n),
-    &:nth-child(3n) {
-      align-self: flex-end;
-    }
+  .advantages__list-item-leaf {
+    margin: 115px 0 0 0;
+  }
+
+  .advantages__list-item-glass {
+    margin: 115px 0 0 30px;
+  }
+
+  .advantages__list-item-tableware {
+    margin: 146px 0 0 0;
+  }
+
+  .advantages__list-item-clock {
+    margin: 146px 0 0 30px;
   }
 }

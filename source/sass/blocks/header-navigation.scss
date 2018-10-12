@@ -75,3 +75,28 @@
     }
   }
 }
+
+@media (min-width: $width__desktop) {
+  .header-navigation {
+    margin: 0;
+  }
+
+  .header-navigation__list {
+    width: auto;
+    outline: 1px solid red;
+    margin: 0 77px 0 0;
+  }
+
+  .header-navigation__list-item {
+    width: auto;
+    padding-top: 4px;
+    outline: 1px solid green;
+    margin-left: 35px;
+  }
+
+  .header-navigation__link {
+    font-size: 20px;
+    line-height: 1.25;
+    color: $white;
+  }
+}

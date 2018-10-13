@@ -44,3 +44,26 @@
     text-align: left;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .additional-promo {
+    position: absolute;
+    top: 132px;
+    right: 111px;
+    min-height: 289px;
+    width: 245px;
+  }
+
+  .additional-promo__wrapper {
+    background: $green url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+    min-height: 289px;
+    width: 245px;
+    margin: 0;
+  }
+
+  .additional-promo__text {
+    align-self: flex-end;
+    margin: 0 37px 46px 0;
+    text-align: center;
+  }
+}

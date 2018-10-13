@@ -28,7 +28,7 @@
   margin: 31px 0 0 23px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $width__tablet) {
   .customer-view {
     justify-content: flex-end;
     align-items: center;
@@ -41,6 +41,28 @@
     font-size: 20px;
     line-height: 1;
     margin: 0;
+  }
+
+  .customer-view-wrapper {
+    width: 570px;
+    margin: 0 0 0 0;
+  }
+
+  .customer-view__img {
+    margin: 0;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .customer-view {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 708px;
+    height: 583px;
+    margin: 0 0 0 0;
   }
 
   .customer-view-wrapper {

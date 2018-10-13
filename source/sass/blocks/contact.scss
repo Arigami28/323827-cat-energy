@@ -85,3 +85,40 @@
     background: $white url("../img/bg-map-tablet@1x.png") bottom no-repeat;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .contact {
+    position: relative;
+    width: 1440px;
+    min-height: 400px;
+    background: $white url("../img/bg-map-desktop@1x.png") no-repeat;
+  }
+
+  .contact__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 570px;
+    height: 201px;
+    background-color: $white;
+  }
+
+  .contact__caption {
+    margin-top: 67px;
+    margin-left: 77px;
+  }
+
+  .contact__address {
+    text-align: left;
+    margin-top: 65px;
+    margin-left: 100px;
+  }
+
+  .contact__map {
+    display: none;
+  }
+}

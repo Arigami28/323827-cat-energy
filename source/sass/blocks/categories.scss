@@ -90,10 +90,9 @@
 @media (min-width: $width__desktop) {
   .categories {
     @include flex-row;
-    min-height: 531px;
+    min-height: 525px;
     justify-content: flex-start;
     align-items: center;
-    outline: 1px solid red;
   }
 
   .categories__block {
@@ -111,13 +110,12 @@
   }
 
   .categories__caption {
-    margin: 76px 0 75px 215px;
+    margin: 78px 0 75px 215px;
   }
 
   .categories__text {
     height: 65px;
     width: 462px;
-    outline: 1px solid green;
   }
 
   .categories__link {

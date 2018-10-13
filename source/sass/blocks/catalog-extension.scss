@@ -56,3 +56,19 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .catalog-extension {
+    width: 245px;
+    min-height: 432px;
+  }
+
+  .catalog-extension__caption {
+    margin: 162px 0 0 0;
+  }
+
+  .catalog-extension__text {
+    margin: 27px 0 0 0;
+    line-height: normal;
+  }
+}

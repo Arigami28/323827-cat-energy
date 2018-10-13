@@ -76,3 +76,27 @@
     margin-left: 52px;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .additional-item {
+    @include flex-row;
+    justify-content: space-between;
+    border-right: none;
+    border-left: none;
+    width: 895px;
+    min-height: 71px;
+    padding: 0;
+    margin-left: 77px;
+  }
+
+  .additional-item__wrapper {
+    margin-left: 3px;
+    outline: 1px solid red;
+    width: 612px;
+  }
+
+  .additional-item__description {
+    width: 287px;
+    outline: 1px solid gold;
+  }
+}

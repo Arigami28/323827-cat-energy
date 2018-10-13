@@ -33,3 +33,13 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .catalog {
+    padding: 0 110px;
+  }
+
+  .catalog__caption {
+    margin: 67px 0 81px 0;
+  }
+}

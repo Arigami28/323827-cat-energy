@@ -47,7 +47,7 @@
   .promo {
     justify-content: flex-start;
     align-items: flex-start;
-    background: $white url("../../img/index-can-tablet@1x.jpg") bottom  no-repeat;
+    background: none;
     min-height: 866px;
   }
 
@@ -79,23 +79,16 @@
 
 @media (min-width: $width__desktop) {
   .promo {
-    z-index: -1;
-    position: relative;
-    min-height: 673px;
-    outline: 1px solid red;
-    margin-top: -120px;
-    background: $white url("../../img/index-background-desktop@1x.jpg") right  top -20px  no-repeat;
+    background: none;
+    min-height: 576px;
   }
 
   .promo__img {
-    display: block;
-    position: absolute;
-    top: 30%;
-    right: 30%;
+    display: none;
   }
 
   .promo__caption {
-    margin-top: 199px;
+    margin-top: 102px;
     margin-left: 192px;
   }
 

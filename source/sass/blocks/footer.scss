@@ -34,3 +34,9 @@
     background-size: 100%;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .footer {
+    padding: 0 110px;
+  }
+}

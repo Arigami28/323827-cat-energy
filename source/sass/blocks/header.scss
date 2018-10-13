@@ -37,13 +37,12 @@
   .header {
     align-items: center;
     min-height: 120px;
-    outline: 1px solid red;
   }
 
   .header__logo {
     width: 203px;
     height: 60px;
     background: $white url("../../img/logo-desktop.svg") center no-repeat;
-    margin: 0 0 0 80px;
+    margin: 48px 0 0 80px;
   }
 }

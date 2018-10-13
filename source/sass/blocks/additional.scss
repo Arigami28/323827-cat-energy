@@ -17,12 +17,23 @@
 @media (min-width: $width__tablet) {
   .additional {
     padding: 0 30px;
-    outline: 1px solid red;
   }
 
   .additional__caption {
     font-size: 36px;
     line-height: 1;
     margin: 11px 0 80px 37px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .additional {
+    position: relative;
+    outline: 1px solid red;
+    min-height: 506px;
+  }
+
+  .additional__caption {
+    margin: 16px 0 80px 78px;
   }
 }

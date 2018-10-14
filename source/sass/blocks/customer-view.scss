@@ -32,8 +32,8 @@
   .customer-view {
     justify-content: flex-end;
     align-items: center;
-    width: 708px;
-    height: 573px;
+    width: $block-size-708px;
+    min-height: 573px;
     margin: 70px 0 0 0;
   }
 
@@ -58,10 +58,7 @@
     position: absolute;
     top: 0;
     right: 40px;
-    justify-content: flex-end;
-    align-items: center;
-    width: 708px;
-    height: 583px;
+    min-height: 583px;
     margin: 0 0 0 0;
   }
 

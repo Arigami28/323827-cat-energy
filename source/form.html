@@ -26,22 +26,23 @@
 <section class="page__programm programm">
   <form class="programm-form" action="https://echo.htmlacademy.ru" method="post">
     <h1 class="programm-form__main-caption">Подбор программы</h1>
-    <fieldset class="programm-form__client-info client-info">
-      <h2 class="client-info__caption">Заполните анкету и мы подберем программу питания для вашего кота</h2>
-      <div class="client-info__wrapper client-info__wrapper_name">
-        <label class="client-info__label client-info__label_name label" for="client__name">Имя:*</label>
-        <input class="client-info__input-text input" type="text" id="client__name" name="name" placeholder="Введите имя" value="Барсик">
-      </div>
-      <div class="client-info__wrapper client-info__wrapper_weight">
-        <label class="client-info__label client-info__label_weight label" for="client__weight">Вес (кг):*</label>
-        <input class="client-info__input-text input" type="text" id="client__weight" name="weight" placeholder="Введите вес" value="7">
-      </div>
-      <div class="client-info__wrapper client-info__wrapper_age">
-        <label class="client-info__label client-info__label_age label" for="client__age">Возраст (лет):</label>
-        <input class="client-info__input-text input" type="text" id="client__age" name="age" placeholder="Введите возраст" value="7">
-      </div>
-    </fieldset>
-    <fieldset class="programm-form__add-info add-info">
+    <div class="programm-form__client">
+      <fieldset class="programm-form__client-info client-info">
+        <h2 class="client-info__caption">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+        <div class="client-info__wrapper client-info__wrapper_name">
+          <label class="client-info__label client-info__label_name label" for="client__name">Имя:*</label>
+          <input class="client-info__input-text input" type="text" id="client__name" name="name" placeholder="Введите имя" value="Барсик">
+        </div>
+        <div class="client-info__wrapper client-info__wrapper_weight">
+          <label class="client-info__label client-info__label_weight label" for="client__weight">Вес (кг):*</label>
+          <input class="client-info__input-text input" type="text" id="client__weight" name="weight" placeholder="Введите вес" value="7">
+        </div>
+        <div class="client-info__wrapper client-info__wrapper_age">
+          <label class="client-info__label client-info__label_age label" for="client__age">Возраст (лет):</label>
+          <input class="client-info__input-text input" type="text" id="client__age" name="age" placeholder="Введите возраст" value="7">
+        </div>
+      </fieldset>
+      <fieldset class="programm-form__add-info add-info">
         <input class="add-info__input-radio client-info__input-radio_selected" type="radio" id="client__reason-losing-weight" name="reason" value="Похудение" checked>
         <label class="add-info__label label" for="client__reason-losing-weight">Похудение</label>
 
@@ -50,16 +51,19 @@
 
         <input class="add-info__input-radio" type="radio" id="client__reason-dont-know" name="reason" value="Не знаю(Нужен ваш совет)">
         <label class="add-info__label label" for="client__reason-dont-know">Не знаю (Нужен ваш совет)</label>
-    </fieldset>
+      </fieldset>
+    </div>
     <fieldset class="programm-form__сontact-details contact-details">
       <h2 class="contact-details__caption programm-form__caption">Контактные данные (владельца&nbsp;кота)</h2>
-      <div class="contact-details__wrapper contact-details__wrapper_email">
-        <label class="contact-details__label contact-details__label_email  label" for="client__email">e-mail:*</label>
-        <input class="contact-details__input-text input" type="email" id="client__email" name="email" placeholder="Введите email" value="kuklachev@gmail.com">
-      </div>
-      <div class="contact-details__wrapper contact-details__wrapper_telefon">
-        <label class="contact-details__label contact-details__label_telefon label" for="client__telefon">Телефон:*</label>
-        <input class="contact-details__input-text input" type="tel" id="client__telefon" name="telefon" placeholder="Введите телефон" value="8 (960) 900-60-90">
+      <div class="contact-details__content">
+        <div class="contact-details__wrapper contact-details__wrapper_email">
+          <label class="contact-details__label contact-details__label_email  label" for="client__email">e-mail:*</label>
+          <input class="contact-details__input-text input" type="email" id="client__email" name="email" placeholder="Введите email" value="kuklachev@gmail.com">
+        </div>
+        <div class="contact-details__wrapper contact-details__wrapper_telefon">
+          <label class="contact-details__label contact-details__label_telefon label" for="client__telefon">Телефон:*</label>
+          <input class="contact-details__input-text input" type="tel" id="client__telefon" name="telefon" placeholder="Введите телефон" value="8 (960) 900-60-90">
+        </div>
       </div>
     </fieldset>
     <fieldset class="programm-form__comments comments">

@@ -23,15 +23,26 @@
   display: none;
 }
 
-@media (min-width: $block-size-768px) {
+@media (min-width: $width__tablet) {
   .add-info {
     width: 628px;
-    height: 194px;
+    min-height: 194px;
     margin: 53px 0 0 41px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid $greyish__lighter;
   }
 
   .add-info__label {
     margin: 33px 0 0 86px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .add-info {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .add-info__label {
+    margin: 33px 0 0 87px;
   }
 }

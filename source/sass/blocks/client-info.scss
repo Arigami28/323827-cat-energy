@@ -70,3 +70,25 @@
     margin-right: 19px;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .client-info {
+    width: 50%;
+  }
+
+  .client-info__caption {
+    margin: 55px 0 65px 0;
+  }
+
+  .client-info__wrapper {
+    margin: 0 0 20px 0;
+  }
+
+  .client-info__label {
+    margin: 0 16px 0 0;
+  }
+
+  .client-info__label_weight {
+    margin-right: 19px;
+  }
+}

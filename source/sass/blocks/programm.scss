@@ -6,7 +6,14 @@
 
 @media (min-width: $width__tablet) {
   .programm {
-    width: 708px;
+    width: $block-size-708px;
     padding: 0 30px;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .programm {
+    width: $block-size-1220px;
+    padding: 0 110px;
   }
 }

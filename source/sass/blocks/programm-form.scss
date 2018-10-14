@@ -60,3 +60,19 @@
     justify-content: flex-start;
   }
 }
+
+@media (min-width: $width__desktop) {
+  .programm-form__main-caption {
+    margin: 67px 0 0 0;
+  }
+
+  .programm-form__client {
+    @include flex-row;
+    width: $block-size-1220px;
+    align-items: flex-end;
+  }
+
+  .programm-form__wrapper {
+    min-height: 192px;
+  }
+}

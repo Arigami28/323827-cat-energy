@@ -36,7 +36,7 @@
 
 .customer-wrapper {
   @include flex-row;
-  width: $block-size-280px;
+  width: $block-size-mobil;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;

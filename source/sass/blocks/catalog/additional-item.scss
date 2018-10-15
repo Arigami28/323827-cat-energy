@@ -1,6 +1,6 @@
 .additional-item {
   @include flex-column;
-  width: $block-size-280px;
+  width: $width__mobil;
   min-height: 128px;
   border-top: 1px solid $greyish__light;
   border-bottom: 1px solid $greyish__light;

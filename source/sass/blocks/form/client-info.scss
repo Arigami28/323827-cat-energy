@@ -2,7 +2,8 @@
   @include flex-column;
   border: none;
   padding: 0;
-  width: $block-size-280px;
+  width: $width__mobil;
+  outline: 1px solid red;
 }
 
 .client-info__wrapper {
@@ -45,8 +46,7 @@
 
 @media (min-width: $width__tablet) {
   .client-info {
-    width: 670px;
-    padding: 0 38px 0 0;
+    width: $width__tablet;
     margin: 0 0 0 0;
   }
 

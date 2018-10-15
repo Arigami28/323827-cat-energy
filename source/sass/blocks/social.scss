@@ -2,7 +2,7 @@
 .social__list {
   @include flex-row;
   @include reset-list-style;
-  width: $block-size-280px;
+  width: $block-size-mobil;
   justify-content: center;
   align-items: center;
   min-height: 62px;

@@ -1,0 +1,16 @@
+.programm {
+  width: $width__mobil;
+  outline: 1px solid red;
+}
+
+@media (min-width: $width__tablet) {
+  .programm {
+    width: $width__tablet;
+  }
+}
+
+@media (min-width: $width__desktop) {
+  .programm {
+    width: $width__desktop;
+  }
+}

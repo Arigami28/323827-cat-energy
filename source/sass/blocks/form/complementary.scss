@@ -1,10 +1,11 @@
 .complementary {
   @include flex-column;
   min-height: 262px;
-  width: $block-size-280px;
+  width: $width__mobil;
   border: none;
   padding: 0;
   margin: 0;
+  outline: 1px solid red;
 }
 
 .complementary__caption {
@@ -26,7 +27,7 @@
 
 @media (min-width: $width__tablet) {
   .complementary {
-    width: $block-size-708px;
+    width: $width__tablet;
     min-height: 282px;
   }
 
@@ -42,28 +43,12 @@
     flex-wrap: wrap;
     margin: 57px 0 0 38px;
   }
-
-  .complementary__label_sweetener {
-    margin: 10px 0 0 60px;
-  }
-
-  .complementary__label_water {
-    margin: 10px 0 0 184px;
-  }
-
-  .complementary__label_milk {
-    margin: 32px 0 0 60px;
-  }
-
-  .complementary__label_vitamins {
-    margin: 32px 0 0 278px;
-  }
 }
 
 @media (min-width: $width__desktop) {
   .complementary {
     min-height: 70px;
-    width: $block-size-1220px;
+    width: $width__desktop;
   }
 
   .complementary__caption {
@@ -75,21 +60,5 @@
     margin: 0;
     width: auto;
     min-height: 100px;
-  }
-
-  .complementary__label_sweetener {
-    margin: 0 0 13px 58px;
-  }
-
-  .complementary__label_water {
-    margin: 0 0 13px 165px;
-  }
-
-  .complementary__label_milk {
-    margin: 0 0 13px 197px;
-  }
-
-  .complementary__label_vitamins {
-    margin: 0 0 13px 257px;
   }
 }

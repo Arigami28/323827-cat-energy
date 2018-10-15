@@ -2,12 +2,12 @@
   @include flex-column;
   align-items: flex-start;
   min-height: 156px;
-  width: $block-size-280px;
-  margin: 0;
+  width: $width__mobil;
   padding: 0;
   border: none;
   border-top: 1px solid $greyish__lighter;
   border-bottom: 1px solid $greyish__lighter;
+  outline: 1px solid red;
 }
 
 .add-info__label {
@@ -27,7 +27,6 @@
   .add-info {
     width: 628px;
     min-height: 194px;
-    margin: 53px 0 0 41px;
     border: 1px solid $greyish__lighter;
   }
 

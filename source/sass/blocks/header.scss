@@ -2,8 +2,8 @@
   @include flex-column;
   position: relative;
   min-height: 265px;
-  margin: 0;
   padding: 0;
+  outline: 1px solid red;
 }
 
 /*элементы блока header*/
@@ -22,14 +22,12 @@
     align-items: flex-end;
     justify-content: space-between;
     min-height: 84px;
-    padding: 0 30px;
   }
 
   .header__logo {
     width: 174px;
     height: 59px;
     background: $white url("../../img/logo-tablet.svg") center no-repeat;
-    margin: 21px 0 2px 0;
   }
 }
 
@@ -43,6 +41,5 @@
     width: 203px;
     height: 60px;
     background: $white url("../../img/logo-desktop.svg") center no-repeat;
-    margin: 48px 0 0 80px;
   }
 }

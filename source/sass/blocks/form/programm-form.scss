@@ -1,5 +1,6 @@
 .programm-form {
   @include flex-column;
+  width: $width__mobil;
   align-items: flex-start;
   border-top: 1px solid $greyish__lighter;
   min-height: 1358px;
@@ -40,6 +41,7 @@
 
 @media (min-width: $width__tablet) {
   .programm-form {
+    width: $width__tablet;
     min-height: auto;
   }
 
@@ -59,16 +61,25 @@
     align-items: center;
     justify-content: flex-start;
   }
+
+  .programm-form__client {
+    @include flex-column;
+    align-items: center;
+  }
 }
 
 @media (min-width: $width__desktop) {
+  .programm-form {
+    width: $width__desktop;
+  }
+
   .programm-form__main-caption {
     margin: 67px 0 0 0;
   }
 
   .programm-form__client {
     @include flex-row;
-    width: $block-size-1220px;
+    width: $width__desktop;
     align-items: flex-end;
   }
 

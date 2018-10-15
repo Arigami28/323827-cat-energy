@@ -2,8 +2,9 @@
   @include flex-column;
   border: none;
   padding: 0;
-  width: $block-size-280px;
+  width: $width__mobil;
   margin: 0;
+  outline: 1px solid red;
 }
 
 .contact-details__wrapper {
@@ -35,7 +36,7 @@
 
 @media (min-width: $width__tablet) {
   .contact-details {
-    width: $block-size-708px;
+    width: $width__tablet;
   }
 
   .contact-details__caption {
@@ -61,7 +62,7 @@
 
 @media (min-width: $width__desktop) {
   .contact-details {
-    width: $block-size-1220px;
+    width: $width__desktop;
   }
 
   .contact-details__caption {

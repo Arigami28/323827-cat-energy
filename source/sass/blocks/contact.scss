@@ -1,7 +1,7 @@
 .contact {
   @include flex-column;
   justify-content: flex-start;
-  margin: 0;
+  width: $width__mobil;
   min-height: 476px;
   padding: 0;
 }
@@ -11,7 +11,7 @@
   @include flex-row;
   align-self: center;
   justify-content: flex-start;
-  width: $block-size-280px;
+  width: $block-size-mobil;
   margin: 28px  0 26px 0;
 }
 
@@ -36,18 +36,16 @@
   padding: 0;
 }
 
-.contact_background {
-  background-color: $greyish__light;
-}
 
 .contact__map {
-  width: $block-size-320px;
+  width: $width__mobil;
   height: 362px;
   background: $white url("../img/bg-map-mobile@1x.png") bottom no-repeat;
 }
 
 @media (min-width: $width__tablet) {
   .contact {
+    width: $width__tablet;
     min-height: 598px;
     justify-content: flex-end;
   }
@@ -81,7 +79,7 @@
 
   .contact__map {
     width: 768px;
-    height: 395px;
+    min-height: 395px;
     background: $white url("../img/bg-map-tablet@1x.png") bottom no-repeat;
   }
 }
@@ -89,7 +87,7 @@
 @media (min-width: $width__desktop) {
   .contact {
     position: relative;
-    width: 1440px;
+    width: $width__desktop;
     min-height: 400px;
     background: $white url("../img/bg-map-desktop@1x.png") no-repeat;
   }

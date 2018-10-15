@@ -1,5 +1,6 @@
 .catalog {
   @include flex-column;
+  width: $width__mobil;
   align-items: flex-start;
   justify-content: flex-start;
   border-top: 1px solid $greyish__light;
@@ -18,28 +19,25 @@
 
 @media (min-width: $width__tablet) {
   .catalog {
-    padding: 0 30px;
+    width: $width__tablet;
   }
 
   .catalog__caption {
     font-size: 60px;
     line-height: 1;
-    margin: 55px 0 81px 0;
     padding: 0;
+    margin: 0;
   }
 
   .catalog__wrapper {
     @include flex-row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $width__desktop) {
   .catalog {
-    padding: 0 110px;
-  }
-
-  .catalog__caption {
-    margin: 67px 0 81px 0;
+    width: $width__desktop;
   }
 }

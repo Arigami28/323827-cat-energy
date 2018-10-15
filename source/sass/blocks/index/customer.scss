@@ -1,10 +1,8 @@
 .customer {
   @include flex-column;
   align-items: flex-start;
-  background-color: $greyish__light;
+  width: $width__mobil;
   min-height: 705px;
-  margin: 0;
-  padding: 0 20px;
 }
 
 /*элементы блока customer*/
@@ -17,7 +15,7 @@
   padding: 0;
 }
 
-.customer_sub-caption {
+.customer-sub__caption {
   font-family: $oswald;
   font-size: 14px;
   line-height: 1.43;
@@ -48,7 +46,7 @@
 .customer__advantages {
   position: relative;
   width: 123px;
-  height: 41px;
+  min-height: 41px;
   font-family: $oswald;
   font-size: 24px;
   line-height: 1;
@@ -81,17 +79,17 @@
 
 @media (min-width: $width__tablet) {
   .customer {
+    width: $width__tablet;
     background-color: $white;
     background-image: linear-gradient(to top, $greyish__light 460px, transparent 460px);
     min-height: 1081px;
-    padding: 0 30px;
   }
 
   .customer-wrapper {
     justify-content: flex-start;
     align-items: flex-end;
     margin: 53px 0 0 0;
-    width: $block-size-708px;
+    width: $block-size-tablet;
     flex-wrap: wrap;
   }
 
@@ -101,7 +99,7 @@
     line-height: 1;
   }
 
-  .customer_sub-caption {
+  .customer-sub__caption {
     @include flex-column;
     align-self: center;
     align-items: flex-end;
@@ -133,14 +131,14 @@
     line-height: 1;
   }
 
-  .customer_sub-caption-price {
+  .customer-sub__caption-price {
     margin-top: 10px;
   }
 }
 
 @media (min-width: $width__desktop) {
   .customer {
-    position: relative;
+    width: $width__desktop;
     min-height: 658px;
     background: none;
     flex-wrap: wrap;
@@ -164,13 +162,13 @@
     margin: 69px 0 0 81px;
   }
 
-  .customer_sub-caption {
+  .customer-sub__caption {
     @include flex-row;
     align-self: flex-start;
     margin: 0 0 0 0;
   }
 
-  .customer_sub-caption-price {
+  .customer-sub__caption-price {
     margin-left: 65px;
   }
 }

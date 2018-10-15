@@ -1,10 +1,10 @@
 .comments {
   @include flex-column;
   min-height: 240px;
-  width: $block-size-280px;
+  width: $width__mobil;
   border: none;
-  margin: 0;
   padding: 0;
+  outline: 1px solid red;
 }
 
 .comments__caption {
@@ -28,11 +28,10 @@
 @media (min-width: $width__tablet) {
   .comments {
     min-height: 328px;
-    width: $block-size-708px;
+    width: $width__tablet;
   }
 
   .comments__caption {
-    margin: 45px 0 77px 40px;
     font-size: 36px;
     line-height: 1;
   }
@@ -50,12 +49,9 @@
 @media (min-width: $width__desktop) {
   .comments {
     min-height: 360px;
-    width: $block-size-1220px;
+    width: $width__desktop;
   }
 
-  .comments__caption {
-    margin: 67px 0 77px 0;
-  }
 
   .comments__textarea {
     margin: 0 0 0 0;

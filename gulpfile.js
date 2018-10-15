@@ -27,7 +27,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch(["source/sass/*.scss","source/sass/blocks/*.scss"], gulp.series("css"));
+  gulp.watch(["source/sass/*.scss","source/sass/blocks/*.scss","source/sass/blocks/index/*.scss","source/sass/blocks/catalog/*.scss","source/sass/blocks/form/*.scss"], gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 

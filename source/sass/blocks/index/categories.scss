@@ -1,16 +1,17 @@
 .categories {
   @include flex-column;
   min-height: 550px;
+  width: $width__mobil;
 }
 
 /*элементы блока categories*/
 .categories__block {
   @include flex-column;
+  outline: 1px solid purple;
   justify-content: flex-start;
   background-color: $greyish__light;
-  width: 280px;
+  width: $block-size-mobil;
   min-height: 266px;
-  margin: 0 20px 20px 20px;
 }
 
 .categories__caption {
@@ -48,18 +49,14 @@
 
 @media (min-width: $width__tablet) {
   .categories {
-    align-items: flex-start;
+    width: $width__tablet;
+    align-items: center;
   }
 
   .categories__block {
     justify-content: flex-start;
-    width: 708px;
+    width: $block-size-tablet;
     min-height: 372px;
-    margin: 0 30px 30px 30px;
-
-    &:nth-child(2n) .categories__text {
-      width: 340px;
-    }
   }
 
   .categories__caption {
@@ -90,23 +87,15 @@
 @media (min-width: $width__desktop) {
   .categories {
     @include flex-row;
+    width: $width__desktop;
     min-height: 525px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
 
   .categories__block {
     align-self: center;
     width: 570px;
-    margin: 0 0 0 111px;
-
-    &:nth-child(2n) {
-      margin: 0 0 0 80px;
-    }
-
-    &:nth-child(2n) .categories__text {
-      width: 462px;
-    }
   }
 
   .categories__caption {

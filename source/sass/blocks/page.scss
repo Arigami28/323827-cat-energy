@@ -1,24 +1,43 @@
 .page {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  width: $width__mobil;
   font-family: $arial;
   color: $black__dark;
   background-color: $white;
 }
 
+.page__wrapper {
+  width: $width__mobil;
+  margin: 0 auto;
+  outline: 1px solid green;
+}
+
+.page__customer {
+  background-color: $greyish__light;
+}
+
+.page__footer {
+  background-color: $greyish__light;
+  width: 100%;
+  outline: 1px solid purple;
+}
+
+.page__wrapper_bg-greyish {
+  background-color: $greyish__light;
+}
+
 @media (min-width: $width__tablet) {
-  .page {
+  .page__wrapper {
     width: $width__tablet;
   }
 }
 
 @media (min-width: $width__desktop) {
-  .page {
+  .page__wrapper {
     width: $width__desktop;
   }
 
   .page__header_bg {
-    background: $white url("../../img/index-background-desktop@1x.jpg") right 1px  top   no-repeat;
+    background: $white url("../img/index-background-desktop@1x.jpg") right 1px  top   no-repeat;
   }
 }

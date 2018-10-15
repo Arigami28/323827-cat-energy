@@ -6,7 +6,7 @@
   @include flex-row;
   justify-content: center;
   align-items: flex-end;
-  width: $block-size-280px;
+  width: $block-size-mobil;
   height: 289px;
   margin: 40px 0 0 0;
   background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
@@ -15,7 +15,6 @@
 .additional-promo__text {
   width: 159px;
   height: 56px;
-  margin: 0;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
@@ -32,7 +31,7 @@
     justify-content: flex-end;
     align-items: center;
     margin: 70px 0 0 0;
-    width: $block-size-708px;
+    width: $block-size-tablet;
     height: 200px;
     background: $green url("../img/gift-photo-tablet@1x.jpg") no-repeat;
     background-size: cover;
@@ -47,9 +46,6 @@
 
 @media (min-width: $width__desktop) {
   .additional-promo {
-    position: absolute;
-    top: 132px;
-    right: 111px;
     min-height: 289px;
     width: 245px;
   }

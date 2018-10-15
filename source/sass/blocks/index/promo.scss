@@ -1,8 +1,9 @@
 .promo {
   @include flex-column;
   align-items: center;
+  width: $width__mobil;
   justify-content: flex-start;
-  background: $white url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  background: $white;
   min-height: 502px;
 }
 
@@ -13,7 +14,7 @@
   font-size: 36px;
   line-height: 1;
   text-align: center;
-  color: $white;
+  color: $black__dark;
   margin: 27px 0 0 0;
   padding: 0;
 }
@@ -32,7 +33,7 @@
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
-  color: $white;
+  color: $black__dark;
   margin: 25px 0 0 0;
   padding: 0;
 }
@@ -45,6 +46,7 @@
 
 @media (min-width: $width__tablet) {
   .promo {
+    width: $width__tablet;
     justify-content: flex-start;
     align-items: flex-start;
     background: none;
@@ -56,48 +58,19 @@
     width: 450px;
     font-size: 60px;
     color: $black__dark;
-    margin-top: 56px;
-    margin-left: 117px;
   }
 
   .promo__sub-caption {
     font-size: 20px;
     color: $black__dark;
-    margin-top: 41px;
-    margin-left: 119px;
     text-align: left;
-  }
-
-  .promo__link {
-    margin-left: 120px;
-  }
-
-  .promo__img {
-    display: none;
   }
 }
 
 @media (min-width: $width__desktop) {
   .promo {
+    width: $width__desktop;
     background: none;
     min-height: 576px;
-  }
-
-  .promo__img {
-    display: none;
-  }
-
-  .promo__caption {
-    margin-top: 102px;
-    margin-left: 192px;
-  }
-
-  .promo__sub-caption {
-    margin-top: 41px;
-    margin-left: 192px;
-  }
-
-  .promo__link {
-    margin-left: 192px;
   }
 }

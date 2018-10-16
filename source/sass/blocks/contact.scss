@@ -1,7 +1,6 @@
 .contact {
   @include flex-column;
-  justify-content: flex-start;
-  width: $width__mobil;
+  justify-content: space-between;
   min-height: 476px;
   background: $white url("../img/bg-map-mobile@1x.png") bottom no-repeat;
 }
@@ -41,13 +40,16 @@
   width: 100%;
 }
 
+.contact__map {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: $resolution__tablet) {
   .contact {
     margin: 0 auto;
     width: $width__tablet;
     min-height: 598px;
-    justify-content: flex-start;
-    background: $white url("../img/bg-map-tablet@1x.png") bottom no-repeat;
   }
 
   .contact__wrapper {
@@ -76,12 +78,6 @@
   .contact__address-city {
     margin: 18px 0 0 0;
   }
-
-  .contact__map {
-    width: 768px;
-    min-height: 395px;
-    background: $white url("../img/bg-map-tablet@1x.png") bottom no-repeat;
-  }
 }
 
 @media (min-width: $resolution__desktop) {
@@ -90,7 +86,6 @@
     position: relative;
     width: $width__desktop;
     min-height: 400px;
-    background: $white url("../img/bg-map-desktop@1x.png") no-repeat;
   }
 
   .contact__wrapper {

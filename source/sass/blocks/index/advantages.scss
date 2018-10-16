@@ -17,7 +17,7 @@
 .advantages__list {
   @include flex-column;
   @include reset-list-style;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .advantages__list-item {

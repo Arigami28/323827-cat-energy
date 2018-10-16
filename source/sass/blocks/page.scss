@@ -9,6 +9,7 @@
 .page__wrapper {
   width: $width__mobil;
   margin: 0 auto;
+  padding: 0 20px;
   outline: 1px solid green;
 }
 
@@ -26,6 +27,11 @@
   background-color: $greyish__light;
 }
 
+.page_default {
+  padding: 0;
+  width: 100%;
+}
+
 @media (min-width: $resolution__tablet) {
   .page__wrapper {
     padding: 0 30px;
@@ -35,11 +41,12 @@
 
 @media (min-width: $resolution__desktop) {
   .page__wrapper {
-    padding: 0 110px;
+    padding: 0 40px;
     width: $width__desktop;
   }
 
   .page__wrapper_bg {
     background: $white url("../img/index-background-desktop@1x.jpg") right 1px  top   no-repeat;
+    background-size: 50%;
   }
 }

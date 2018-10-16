@@ -1,10 +1,10 @@
 .promo {
   @include flex-column;
   align-items: center;
-  width: $width__mobil;
   justify-content: flex-start;
   background: $white;
   min-height: 502px;
+  padding: 0 20px;
 }
 
 /*элементы блока promo*/
@@ -46,11 +46,11 @@
 
 @media (min-width: $resolution__tablet) {
   .promo {
-    width: $width__tablet;
     justify-content: flex-start;
     align-items: flex-start;
     background: none;
     min-height: 866px;
+    padding: 0;
   }
 
   .promo__caption {

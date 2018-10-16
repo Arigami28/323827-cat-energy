@@ -26,14 +26,16 @@
   background-color: $greyish__light;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .page__wrapper {
+    padding: 0 30px;
     width: $width__tablet;
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .page__wrapper {
+    padding: 0 110px;
     width: $width__desktop;
   }
 

@@ -39,7 +39,7 @@
   background-size: 10px 19px;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .social__list {
     justify-content: flex-start;
     align-items: flex-start;

@@ -23,7 +23,7 @@
   display: none;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .add-info {
     width: 628px;
     min-height: 194px;
@@ -35,7 +35,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .add-info {
     width: 50%;
     margin-bottom: 20px;

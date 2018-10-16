@@ -17,7 +17,7 @@
   padding: 15px 0 28px 0;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .catalog {
     width: $width__tablet;
   }
@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .catalog {
     width: $width__desktop;
   }

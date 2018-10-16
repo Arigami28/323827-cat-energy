@@ -29,7 +29,7 @@
   color: $greyish;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .advantages {
     width: $width__tablet;
     min-height: 750px;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .advantages {
     min-height: 380px;
     width: $width__desktop;
@@ -72,7 +72,7 @@
   }
 
   .advantages__list {
-    width: 1380px;
+    /*width: 1380px;*/
     min-height: 240px;
   }
 

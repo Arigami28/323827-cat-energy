@@ -25,7 +25,7 @@
   @include flex-column;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .complementary {
     width: $width__tablet;
     min-height: 282px;
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .complementary {
     min-height: 70px;
     width: $width__desktop;

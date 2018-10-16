@@ -44,7 +44,7 @@
   padding: 0;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .promo {
     width: $width__tablet;
     justify-content: flex-start;
@@ -67,7 +67,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .promo {
     width: $width__desktop;
     background: none;

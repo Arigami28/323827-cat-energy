@@ -14,7 +14,7 @@
   margin: 26px 0 34px 0;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .additional {
     width: $width__tablet;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .additional {
     @include flex-row;
     width: $width__desktop;

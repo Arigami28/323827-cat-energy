@@ -43,7 +43,7 @@
   padding: 0;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .header-navigation {
     margin-bottom: 16px;
   }
@@ -76,14 +76,13 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .header-navigation {
     margin: 0;
   }
 
   .header-navigation__list {
     width: auto;
-
     margin: 48px 77px 0 0;
   }
 

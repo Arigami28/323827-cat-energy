@@ -34,7 +34,7 @@
   flex-grow: 1;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .contact-details {
     width: $width__tablet;
   }
@@ -60,7 +60,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .contact-details {
     width: $width__desktop;
   }

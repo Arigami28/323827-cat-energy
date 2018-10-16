@@ -2,6 +2,8 @@
   @include flex-column;
   min-height: 550px;
   width: $width__mobil;
+  align-items: center;
+  justify-content: center;
 }
 
 /*элементы блока categories*/
@@ -47,7 +49,7 @@
   padding: 0;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .categories {
     width: $width__tablet;
     align-items: center;
@@ -84,7 +86,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .categories {
     @include flex-row;
     width: $width__desktop;

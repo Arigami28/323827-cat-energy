@@ -25,7 +25,7 @@
   resize: none;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .comments {
     min-height: 328px;
     width: $width__tablet;
@@ -46,7 +46,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .comments {
     min-height: 360px;
     width: $width__desktop;

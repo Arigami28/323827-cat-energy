@@ -39,7 +39,7 @@
   margin: 25px 0 0 0;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .programm-form {
     width: $width__tablet;
     min-height: auto;
@@ -68,7 +68,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .programm-form {
     width: $width__desktop;
   }

@@ -33,7 +33,7 @@
   background-color: $greyish__light;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .catalog-extension {
     align-self: baseline;
     border: 1px solid $greyish__light;
@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .catalog-extension {
     width: 245px;
     min-height: 432px;

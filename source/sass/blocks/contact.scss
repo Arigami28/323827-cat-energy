@@ -3,7 +3,7 @@
   justify-content: flex-start;
   width: $width__mobil;
   min-height: 476px;
-  padding: 0;
+  background: $white url("../img/bg-map-mobile@1x.png") bottom no-repeat;
 }
 
 /*элементы блока contact*/
@@ -36,18 +36,18 @@
   padding: 0;
 }
 
-
-.contact__map {
-  width: $width__mobil;
-  height: 362px;
-  background: $white url("../img/bg-map-mobile@1x.png") bottom no-repeat;
+.page__wrapper_margin-default {
+  margin: 0;
+  width: 100%;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .contact {
+    margin: 0 auto;
     width: $width__tablet;
     min-height: 598px;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    background: $white url("../img/bg-map-tablet@1x.png") bottom no-repeat;
   }
 
   .contact__wrapper {
@@ -84,8 +84,9 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .contact {
+    margin: 0 auto;
     position: relative;
     width: $width__desktop;
     min-height: 400px;

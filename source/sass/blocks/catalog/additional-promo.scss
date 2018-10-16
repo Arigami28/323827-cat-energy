@@ -22,7 +22,7 @@
   margin-bottom: 30px;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .additional-promo {
     min-height: 347px;
   }
@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .additional-promo {
     min-height: 289px;
     width: 245px;

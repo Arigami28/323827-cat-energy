@@ -44,7 +44,7 @@
   display: none;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .client-info {
     width: $width__tablet;
     margin: 0 0 0 0;
@@ -71,7 +71,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .client-info {
     width: 50%;
   }

@@ -61,7 +61,7 @@
   padding: 0;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .catalog-item {
     background-image: linear-gradient(to top, $greyish__light 431px, transparent 431px);
     align-items: center;
@@ -122,7 +122,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .catalog-item {
     min-height: 517px;
     width: 244px;

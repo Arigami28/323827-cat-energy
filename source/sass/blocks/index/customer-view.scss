@@ -28,7 +28,7 @@
   margin: 31px 0 0 23px;
 }
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .customer-view {
     justify-content: flex-end;
     align-items: center;
@@ -53,7 +53,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .customer-view {
     min-height: 583px;
     margin: 0 0 0 0;

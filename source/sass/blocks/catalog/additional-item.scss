@@ -42,7 +42,7 @@
 }
 
 
-@media (min-width: $width__tablet) {
+@media (min-width: $resolution__tablet) {
   .additional-item {
     padding: 0 38px 0 38px;
     width: 631px;
@@ -77,7 +77,7 @@
   }
 }
 
-@media (min-width: $width__desktop) {
+@media (min-width: $resolution__desktop) {
   .additional-item {
     @include flex-row;
     justify-content: space-between;

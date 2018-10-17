@@ -1,0 +1,115 @@
+.categories {
+  @include flex-column;
+  min-height: 550px;
+  width: $width__mobil;
+  align-items: center;
+  justify-content: center;
+}
+
+/*элементы блока categories*/
+.categories__block {
+  @include flex-column;
+  outline: 1px solid purple;
+  justify-content: flex-start;
+  background-color: $greyish__light;
+  width: $block-size-mobil;
+  min-height: 266px;
+}
+
+.categories__caption {
+  font-family: $oswald;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.54;
+  text-transform: uppercase;
+  color: $black__dark;
+  margin: 30px 0 0 91px;
+  padding: 0;
+}
+
+.categories__text {
+  width: 242px;
+  height: 110px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $greyish;
+  margin: 30px 0 21px 20px;
+  padding: 0;
+  border-bottom: 1px solid $color-social__list-border;
+}
+
+.categories__link {
+  @include reset-link-style;
+  width: 100px;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 1;
+  color: $black__dark;
+  margin: 0 0 15px 20px;
+  padding: 0;
+}
+
+@media (min-width: $resolution__tablet) {
+  .categories {
+    width: $width__tablet;
+    align-items: center;
+  }
+
+  .categories__block {
+    justify-content: flex-start;
+    width: $block-size-tablet;
+    min-height: 372px;
+  }
+
+  .categories__caption {
+    font-size: 36px;
+    line-height: 1.03;
+    text-align: left;
+    margin: 76px 0 25px 53px;
+  }
+
+  .categories__text {
+    width: 380px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 0 52px;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .categories__link {
+    width: 115px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    margin: 43px 0 0 53px;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .categories {
+    @include flex-row;
+    width: $width__desktop;
+    min-height: 525px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categories__block {
+    align-self: center;
+    width: 570px;
+  }
+
+  .categories__caption {
+    margin: 78px 0 75px 215px;
+  }
+
+  .categories__text {
+    height: 65px;
+    width: 462px;
+  }
+
+  .categories__link {
+    margin: 37px 0 0 53px;
+  }
+}

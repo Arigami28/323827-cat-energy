@@ -1,0 +1,61 @@
+.comments {
+  @include flex-column;
+  min-height: 240px;
+  width: $width__mobil;
+  border: none;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+.comments__caption {
+  margin: 28px 0 35px 0;
+  font-weight: normal;
+  padding: 0;
+}
+
+.comments__textarea {
+  font-size: 16px;
+  line-height: 1.13;
+  width: 263px;
+  height: 135px;
+  margin: 0 0 15px 0;
+  padding: 13px 0  0 13px;
+  border: 1px solid $greyish__lighter;
+  text-transform: uppercase;
+  resize: none;
+}
+
+@media (min-width: $resolution__tablet) {
+  .comments {
+    min-height: 328px;
+    width: $width__tablet;
+  }
+
+  .comments__caption {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .comments__textarea {
+    padding: 8px 0  0 18px;
+    margin: 0 0 0 40px;
+    width: 610px;
+    height: 160px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .comments {
+    min-height: 360px;
+    width: $width__desktop;
+  }
+
+
+  .comments__textarea {
+    margin: 0 0 0 0;
+    height: 163px;
+    width: 1200px;
+  }
+}

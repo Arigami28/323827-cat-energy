@@ -1,0 +1,89 @@
+.programm-form {
+  @include flex-column;
+  width: $width__mobil;
+  align-items: flex-start;
+  border-top: 1px solid $greyish__lighter;
+  min-height: 1358px;
+}
+
+.programm-form__main-caption {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: normal;
+  margin: 15px 0 0 0;
+}
+
+.programm-form__caption {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.programm-form__text-tutorial {
+  font-size: 14px;
+  line-height: 1.14;
+  color: $greyish;
+  margin: 0;
+  padding: 0;
+}
+
+.programm-form__wrapper {
+  @include flex-column;
+  width: 100%;
+  align-items: center;
+}
+
+.programm-form__client-info {
+  margin: 25px 0 0 0;
+}
+
+@media (min-width: $resolution__tablet) {
+  .programm-form {
+    width: $width__tablet;
+    min-height: auto;
+  }
+
+  .programm-form__main-caption {
+    font-size: 60px;
+    line-height: 1;
+    margin: 55px 0 0 0;
+  }
+
+  .programm-form__caption {
+    font-size: 36px;
+  }
+
+  .programm-form__wrapper {
+    @include flex-row;
+    min-height: 169px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .programm-form__client {
+    @include flex-column;
+    align-items: center;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .programm-form {
+    width: $width__desktop;
+  }
+
+  .programm-form__main-caption {
+    margin: 67px 0 0 0;
+  }
+
+  .programm-form__client {
+    @include flex-row;
+    width: $width__desktop;
+    align-items: flex-end;
+  }
+
+  .programm-form__wrapper {
+    min-height: 192px;
+  }
+}

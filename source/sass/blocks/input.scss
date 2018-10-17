@@ -3,4 +3,15 @@
   font-size: 16px;
   line-height: 1.13;
   color: $greyish;
+  min-height: 40px;
+  padding-left: 14px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $width__tablet) {
+  .input {
+    padding: 4px 0 4px 16px;
+    font-size: 20px;
+    line-height: 1;
+  }
 }

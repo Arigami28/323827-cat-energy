@@ -5,3 +5,10 @@
   color: $black__lighter;
   text-transform: uppercase;
 }
+
+@media (min-width: $width__tablet) {
+  .label {
+    font-size: 20px;
+    line-height: 1;
+  }
+}

@@ -1,15 +1,17 @@
 .contact {
   @include flex-column;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
+  min-height: 476px;
+  background: $white url("../img/bg-map-mobile@1x.png") bottom no-repeat;
 }
+
 /*элементы блока contact*/
 .contact__wrapper {
   @include flex-row;
-  justify-content: center;
-  width: 280px;
-  margin: 0 20px;
+  align-self: center;
+  justify-content: flex-start;
+  width: $block-size-mobil;
+  margin: 28px  0 26px 0;
 }
 
 .contact__address {
@@ -26,12 +28,91 @@
   width: 50%;
   font-family: $oswald;
   font-size: 16px;
+  font-weight: normal;
   line-height: 1.25;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
 
-.contact_background {
-  background-color: $greyish__light;
+.page__wrapper_margin-default {
+  margin: 0;
+  width: 100%;
+}
+
+.contact__map {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: $resolution__tablet) {
+  .contact {
+    margin: 0 auto;
+    width: $width__tablet;
+    min-height: 598px;
+  }
+
+  .contact__wrapper {
+    justify-content: space-between;
+    min-height: 83px;
+    width: 628px;
+    margin: 0  0 55px 0;
+  }
+
+  .contact__caption {
+    font-size: 20px;
+    width: 150px;
+  }
+
+  .contact__address {
+    @include flex-column;
+    justify-content: flex-start;
+    width: 155px;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    font-weight: normal;
+    padding: 0;
+  }
+
+  .contact__address-city {
+    margin: 18px 0 0 0;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .contact {
+    margin: 0 auto;
+    position: relative;
+    width: $width__desktop;
+    min-height: 400px;
+  }
+
+  .contact__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 570px;
+    height: 201px;
+    background-color: $white;
+  }
+
+  .contact__caption {
+    margin-top: 67px;
+    margin-left: 77px;
+  }
+
+  .contact__address {
+    text-align: left;
+    margin-top: 65px;
+    margin-left: 100px;
+  }
+
+  .contact__map {
+    display: none;
+  }
 }

@@ -1,0 +1,39 @@
+.additional {
+  @include flex-column;
+  width: $width__mobil;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.additional__caption {
+  align-self: flex-start;
+  font-weight: normal;
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 1;
+  margin: 26px 0 34px 0;
+}
+
+@media (min-width: $resolution__tablet) {
+  .additional {
+    width: $width__tablet;
+  }
+
+  .additional__caption {
+    font-size: 36px;
+    line-height: 1;
+    margin: 11px 0 80px 37px;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .additional {
+    @include flex-row;
+    width: $width__desktop;
+    min-height: 506px;
+  }
+
+  .additional__caption {
+    margin: 16px 0 80px 78px;
+  }
+}

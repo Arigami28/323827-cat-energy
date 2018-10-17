@@ -1,0 +1,174 @@
+.customer {
+  @include flex-column;
+  align-items: flex-start;
+  width: $width__mobil;
+  min-height: 705px;
+}
+
+/*элементы блока customer*/
+.customer__caption {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: normal;
+  margin: 17px 0 0 0;
+  padding: 0;
+}
+
+.customer-sub__caption {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 34px 0 0 47px;
+  padding: 0;
+}
+
+.customer__text {
+  width: 266px;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $greyish;
+  margin: 23px 0 0 0;
+  padding: 0;
+}
+
+.customer-wrapper {
+  @include flex-row;
+  width: $block-size-mobil;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 25px 0 0 0;
+}
+
+.customer__advantages {
+  position: relative;
+  width: 123px;
+  min-height: 41px;
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 0 0 0;
+  border: 1px solid $color-customer__border;
+  border-radius: 3px;
+  margin-right: 30px;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.customer__sub-advantages {
+  position: absolute;
+  bottom: -16px;
+  left: 32px;
+  width: 57px;
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  color: $greyish;
+  text-transform: none;
+  margin: 0 0 0 0;
+  padding: 0 0;
+}
+
+@media (min-width: $resolution__tablet) {
+  .customer {
+    width: $width__tablet;
+    background-color: $white;
+    background-image: linear-gradient(to top, $greyish__light 460px, transparent 460px);
+    min-height: 1081px;
+  }
+
+  .customer-wrapper {
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 53px 0 0 0;
+    width: $block-size-tablet;
+    flex-wrap: wrap;
+  }
+
+  .customer__caption {
+    margin: 43px 0 0 0;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .customer-sub__caption {
+    @include flex-column;
+    align-self: center;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 0 0 165px;
+  }
+
+  .customer__text {
+    width: 680px;
+    margin: 65px 0 0 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .customer__advantages {
+    align-items: center;
+    padding: 15px 18px 14px 19px;
+    font-size: 30px;
+    line-height: 1.23;
+    margin-right: 44px;
+  }
+
+  .customer__sub-advantages {
+    bottom: -5px;
+    left: 3px;
+    width: 150px;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .customer-sub__caption-price {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .customer {
+    width: $width__desktop;
+    min-height: 658px;
+    background: none;
+    flex-wrap: wrap;
+  }
+
+  .customer__caption {
+    margin: 62px 0 0 81px;
+  }
+
+  .customer__text {
+    width: 435px;
+    margin: 145px 0 0 81px;
+  }
+
+  .customer-wrapper {
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 200px;
+    width: 370px;
+    flex-wrap: wrap;
+    margin: 69px 0 0 81px;
+  }
+
+  .customer-sub__caption {
+    @include flex-row;
+    align-self: flex-start;
+    margin: 0 0 0 0;
+  }
+
+  .customer-sub__caption-price {
+    margin-left: 65px;
+  }
+}

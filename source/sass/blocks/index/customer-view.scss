@@ -1,0 +1,70 @@
+.customer-view {
+  @include flex-column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+/*элементы блока customer-view*/
+.customer-view__text {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.customer-view__img {
+  margin: 35px 0 0 -20px;
+  padding: 0;
+}
+
+.customer-view__wrapper {
+  @include flex-row;
+  width: 239px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 31px 0 0 23px;
+}
+
+@media (min-width: $resolution__tablet) {
+  .customer-view {
+    justify-content: flex-end;
+    align-items: center;
+    width: $block-size-tablet;
+    min-height: 573px;
+    margin: 70px 0 0 0;
+  }
+
+  .customer-view__text {
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .customer-view__wrapper {
+    width: 570px;
+    margin: 0 0 0 0;
+  }
+
+  .customer-view__img {
+    margin: 0;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .customer-view {
+    min-height: 583px;
+    margin: 0 0 0 0;
+  }
+
+  .customer-view__wrapper {
+    width: 570px;
+    margin: 0 0 0 0;
+  }
+
+  .customer-view__img {
+    margin: 0;
+  }
+}

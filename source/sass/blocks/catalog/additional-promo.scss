@@ -1,0 +1,65 @@
+.additional-promo {
+  min-height: 363px;
+}
+
+.additional-promo__wrapper {
+  @include flex-row;
+  justify-content: center;
+  align-items: flex-end;
+  width: $block-size-mobil;
+  height: 289px;
+  margin: 40px 0 0 0;
+  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+}
+
+.additional-promo__text {
+  width: 159px;
+  height: 56px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: $white;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $resolution__tablet) {
+  .additional-promo {
+    min-height: 347px;
+  }
+
+  .additional-promo__wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    margin: 70px 0 0 0;
+    width: $block-size-tablet;
+    height: 200px;
+    background: $green url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .additional-promo__text {
+    margin: 0 115px 0 0;
+    width: 170px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .additional-promo {
+    min-height: 289px;
+    width: 245px;
+  }
+
+  .additional-promo__wrapper {
+    background: $green url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+    min-height: 289px;
+    width: 245px;
+    margin: 0;
+  }
+
+  .additional-promo__text {
+    align-self: flex-end;
+    margin: 0 37px 46px 0;
+    text-align: center;
+  }
+}

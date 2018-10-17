@@ -10,5 +10,21 @@ $greyish:#444444;
 $greyish__light:#f2f2f2;
 $greyish__lighter:#e6e6e6;
 $color-social__list-border:#d9d9d9;
+$color-customer__border:#cdcdcd;
 $green:#68b738;
 $pink:#ff8282;
+
+/*размеры экрана*/
+
+$resolution__mobil:320px;
+$resolution__tablet:768px;
+$resolution__desktop:1440px;
+
+$width__mobil:320px;
+$width__tablet:768px;
+$width__desktop:1300px;
+
+/*размеры блоков сетки*/
+$block-size-mobil:280px;
+$block-size-tablet:708px;
+$block-size-desktop:1220px;

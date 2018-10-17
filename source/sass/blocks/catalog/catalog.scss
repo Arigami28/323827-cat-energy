@@ -1,0 +1,43 @@
+.catalog {
+  @include flex-column;
+  width: $width__mobil;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-top: 1px solid $greyish__light;
+}
+
+/*элементы catalog */
+.catalog__caption {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: normal;
+  color: $black__dark;
+  margin: 0 0 0 20px;
+  padding: 15px 0 28px 0;
+}
+
+@media (min-width: $resolution__tablet) {
+  .catalog {
+    width: $width__tablet;
+  }
+
+  .catalog__caption {
+    font-size: 60px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+
+  .catalog__wrapper {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .catalog {
+    width: $width__desktop;
+  }
+}

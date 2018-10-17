@@ -1,9 +1,8 @@
 .header {
+  @include flex-column;
   position: relative;
-  min-width: 320px;
-  min-height: 65px;
-  margin: 0 0 0 0;
-  padding: 1px 0 0 0;
+  min-height: 265px;
+  outline: 1px solid red;
 }
 
 /*элементы блока header*/
@@ -11,7 +10,34 @@
   display: block;
   width: 191px;
   height: 39px;
-  background: $white url("../../img/logo-mobile.svg") no-repeat;
+  background: $white url("../../img/logo-mobile.svg") center no-repeat;
   padding: 0;
-  margin: 11px 109px 15px 20px;
+}
+
+@media (min-width: $resolution__tablet) {
+  .header {
+    @include flex-row;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 84px;
+  }
+
+  .header__logo {
+    width: 174px;
+    height: 59px;
+    background: $white url("../../img/logo-tablet.svg") center no-repeat;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .header {
+    align-items: center;
+    min-height: 120px;
+  }
+
+  .header__logo {
+    width: 203px;
+    height: 60px;
+    background: $white url("../../img/logo-desktop.svg") center no-repeat;
+  }
 }

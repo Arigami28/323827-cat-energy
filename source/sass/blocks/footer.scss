@@ -1,14 +1,39 @@
 .footer {
   @include flex-column;
   background-color: $greyish__light;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  min-height: 236px;
 }
 
 .footer__logo {
+  margin-top: 39px;
   width: 128px;
   height: 24px;
   background: $greyish__light url("../img/logo-footer.svg") no-repeat;
+}
+
+.footer__social {
+  margin: 30px 0 21px 0;
+}
+
+@media (min-width: $resolution__tablet) {
+  .footer {
+    @include flex-row;
+    width: $width__tablet;
+    min-height: 152px;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    width: 130px;
+    margin: 0;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: $resolution__desktop) {
+  .footer {
+    width: $width__desktop;
+  }
 }

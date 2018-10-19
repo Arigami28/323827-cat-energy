@@ -5,7 +5,6 @@
   width: $width__mobil;
   padding: 0 20px;
   margin: 0;
-  outline: 1px solid red;
   position: relative;
 }
 
@@ -28,7 +27,7 @@
   min-height: 150px;
   margin: 0 0 15px 0;
   padding: 13px 0  0 13px;
-  border: 1px solid $greyish__lighter;
+  border: $grey-border;
   text-transform: uppercase;
   resize: none;
 }

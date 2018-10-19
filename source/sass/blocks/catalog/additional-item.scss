@@ -2,8 +2,8 @@
   @include flex-column;
   width: $block-size-mobil;
   min-height: 130px;
-  border-top: 1px solid $greyish__light;
-  border-bottom: 1px solid $greyish__light;
+  border-top: $grey-border;
+  border-bottom: $grey-border;
   margin-top: -1px;
 
   &:last-child {
@@ -51,7 +51,7 @@
     width: 631px;
     min-height: 138px;
     margin: -1px 0 0 0;
-    border: 1px solid $greyish__light;
+    border: $grey-border;
   }
 
   .additional-item__caption {

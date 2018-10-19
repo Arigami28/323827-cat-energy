@@ -10,7 +10,6 @@
   width: $width__mobil;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 1px solid green;
 }
 
 .page__customer {
@@ -20,14 +19,13 @@
 .page__footer {
   background-color: $greyish__light;
   width: 100%;
-  outline: 1px solid purple;
 }
 
 .page__wrapper_bg-greyish {
   background-color: $greyish__light;
 }
 
-.page_default {
+.page__wrapper_default {
   padding: 0;
   width: 100%;
 }

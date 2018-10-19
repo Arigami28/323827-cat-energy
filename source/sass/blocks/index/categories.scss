@@ -10,7 +10,6 @@
 .categories__block {
   @include flex-column;
   position: relative;
-  outline: 1px solid purple;
   justify-content: space-between;
   align-items: flex-start;
   background-color: $greyish__light;
@@ -82,7 +81,6 @@
   content: "";
   display: block;
   position: absolute;
-
   z-index: 2;
 }
 

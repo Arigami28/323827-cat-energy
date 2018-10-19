@@ -37,7 +37,7 @@
 .header-navigation__list-item {
   @include flex-row;
   justify-content: center;
-  border-top: 1px solid $greyish__lighter;
+  border-top: $grey-border;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -56,7 +56,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.39;
-    color: #222222;
+    color: $black__lighter;
     padding: 0;
   }
 

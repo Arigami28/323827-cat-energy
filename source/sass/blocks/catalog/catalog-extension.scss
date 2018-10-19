@@ -2,11 +2,10 @@
   @include flex-column;
   align-items: center;
   justify-content: flex-start;
-  border-top: 1px solid $greyish__light;
-  border-bottom: 1px solid $greyish__light;
+  border-top: $grey-border;
+  border-bottom: $grey-border;
   min-height: 210px;
   width: 100%;
-  outline: 1px solid green;
 }
 
 .catalog-extension__caption {

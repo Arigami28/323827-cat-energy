@@ -2,7 +2,7 @@
   @include flex-column;
   width: $width__mobil;
   align-items: flex-start;
-  border-top: 1px solid $greyish__lighter;
+  border-top: $grey-border;
   min-height: 1358px;
 }
 

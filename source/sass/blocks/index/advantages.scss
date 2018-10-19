@@ -22,14 +22,12 @@
   width: $block-size-mobil;
   min-height: 310px;
   align-items: center;
-  outline: 1px solid red;
 }
 
 .advantages__list-item {
   @include flex-row;
   justify-content: flex-end;
   align-items: center;
-  outline: 1px solid green;
   text-align: left;
   width: 100%;
   min-height: 80px;
@@ -42,7 +40,6 @@
     width: 200px;
     margin: 0;
     padding: 0;
-    outline: 1px solid blue;
   }
 }
 

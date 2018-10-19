@@ -6,10 +6,10 @@
   width: $width__mobil;
   padding: 15px 20px 10px  20px;
   margin: 0;
-  border: none;
-  border-top: 1px solid $greyish__lighter;
-  border-bottom: 1px solid $greyish__lighter;
-  outline: 1px solid red;
+  border-left: none;
+  border-right: none;
+  border-top: $grey-border;
+  border-bottom: $grey-border;
   position: relative;
 }
 
@@ -50,7 +50,7 @@
   .add-info {
     width: 628px;
     min-height: 194px;
-    border: 1px solid $greyish__lighter;
+    border: $grey-border;
   }
 
   .add-info__label {

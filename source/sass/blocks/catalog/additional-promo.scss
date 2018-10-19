@@ -2,7 +2,6 @@
   @include flex-column;
   align-items: center;
   justify-content: center;
-  outline: 1px solid  yellow;
   min-height: 363px;
 }
 
@@ -13,17 +12,15 @@
   width: $block-size-mobil;
   min-height: 289px;
   background: $green url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
-  outline: 1px solid red;
 }
 
 .additional-promo__text {
   width: 170px;
-  height: 80px;
+  min-height: 80px;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
   color: $white;
-  outline: 1px solid red;
   margin: 0 0 20px 0;
   padding: 0;
 }

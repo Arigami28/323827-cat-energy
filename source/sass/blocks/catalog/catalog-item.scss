@@ -6,15 +6,13 @@
   width: $width__mobil;
   padding: 0;
   margin: 0;
-  border-top: 1px solid $greyish__light;
-  outline: 1px solid red;
+  border-top: $grey-border;
 }
 
 .catalog-item__wrapper {
   @include flex-row;
   align-items: flex-start;
   justify-content: center;
-  outline: 1px solid red;
   width: $block-size-mobil;
   min-height: 144px;
 }
@@ -38,7 +36,6 @@
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
-  /*margin: 21px 0 0 0;*/
   margin: 22px 0 0 0;
 }
 

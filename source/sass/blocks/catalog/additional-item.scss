@@ -1,7 +1,7 @@
 .additional-item {
   @include flex-column;
-  width: $width__mobil;
-  min-height: 128px;
+  width: $block-size-mobil;
+  min-height: 130px;
   border-top: 1px solid $greyish__light;
   border-bottom: 1px solid $greyish__light;
   margin-top: -1px;
@@ -18,7 +18,7 @@
   color: $black__lighter;
   text-transform: uppercase;
   font-weight: normal;
-  margin: 13px 0 0 2px;
+  margin: 14px 0 0 0;
   padding: 0;
 }
 
@@ -29,6 +29,7 @@
   line-height: 1;
   color: $greyish;
   margin: 13px 0 0 0;
+  text-align: left;
 }
 
 .additional-item__button {
@@ -39,6 +40,8 @@
   line-height: 1.25;
   color: $white;
   background-color: $green;
+  margin: 15px 0 0 0;
+  padding: 10px 108px 10px 111px;
 }
 
 

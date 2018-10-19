@@ -1,20 +1,29 @@
 .catalog {
   @include flex-column;
-  width: $width__mobil;
-  align-items: flex-start;
-  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid $greyish__light;
 }
 
 /*элементы catalog */
 .catalog__caption {
+  align-self: flex-start;
   font-family: $oswald;
   font-size: 36px;
   line-height: 1.67;
   font-weight: normal;
   color: $black__dark;
-  margin: 0 0 0 20px;
-  padding: 15px 0 28px 0;
+  margin: 13px 0 0 20px;
+  padding: 0 0 0 0;
+}
+
+.catalog__wrapper {
+  @include flex-row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 28px 0 0 0;
 }
 
 @media (min-width: $resolution__tablet) {

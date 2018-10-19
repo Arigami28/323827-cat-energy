@@ -1,4 +1,8 @@
 .additional-promo {
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid  yellow;
   min-height: 363px;
 }
 
@@ -7,19 +11,21 @@
   justify-content: center;
   align-items: flex-end;
   width: $block-size-mobil;
-  height: 289px;
-  margin: 40px 0 0 0;
-  background: $green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  min-height: 289px;
+  background: $green url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
+  outline: 1px solid red;
 }
 
 .additional-promo__text {
-  width: 159px;
-  height: 56px;
+  width: 170px;
+  height: 80px;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
   color: $white;
-  margin-bottom: 30px;
+  outline: 1px solid red;
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
 @media (min-width: $resolution__tablet) {

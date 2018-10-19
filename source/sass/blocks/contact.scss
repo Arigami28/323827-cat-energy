@@ -1,17 +1,20 @@
 .contact {
   @include flex-column;
-  justify-content: space-between;
-  min-height: 476px;
-  background: $white url("../img/bg-map-mobile@1x.png") bottom no-repeat;
+  position: relative;
+  justify-content: flex-end;
+  min-height: 477px;
 }
 
 /*элементы блока contact*/
 .contact__wrapper {
   @include flex-row;
-  align-self: center;
-  justify-content: flex-start;
-  width: $block-size-mobil;
-  margin: 28px  0 26px 0;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
+  z-index: 2;
+  background-color: $white;
+  min-height: 114px;
+  padding: 0 20px;
 }
 
 .contact__address {
@@ -35,12 +38,9 @@
   padding: 0;
 }
 
-.page__wrapper_margin-default {
-  margin: 0;
-  width: 100%;
-}
-
 .contact__map {
+  z-index: 1;
+  margin-top: -39px;
   width: 100%;
   height: auto;
 }

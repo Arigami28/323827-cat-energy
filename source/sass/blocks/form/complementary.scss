@@ -3,9 +3,10 @@
   min-height: 262px;
   width: $width__mobil;
   border: none;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
   outline: 1px solid red;
+  position: relative;
 }
 
 .complementary__caption {
@@ -13,8 +14,29 @@
   margin: 13px 0 40px 0;
 }
 
+.complementary__caption::before {
+  top: 26px;
+  right: 0;
+  width: 136px;
+}
+
 .complementary__label {
-  margin: 0 0 25px 45px;
+  margin: 0 0 24px 45px;
+  position: relative;
+}
+
+.complementary__label::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #cdcdcd;
+}
+
+.complementary__input-checkbox:checked + .complementary__label::after {
+  background: url("../img/icon-tick.svg") center no-repeat;
 }
 
 .complementary__input-checkbox {

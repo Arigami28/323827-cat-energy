@@ -2,16 +2,18 @@
   @include flex-column;
   position: relative;
   min-height: 265px;
+  justify-content: flex-end;
   outline: 1px solid red;
 }
 
 /*элементы блока header*/
 .header__logo {
-  display: block;
+  position: absolute;
+  top: 12px;
+  left: 20px;
   width: 191px;
   height: 39px;
-  background: $white url("../../img/logo-mobile.svg") center no-repeat;
-  padding: 0;
+  background: $white url("../img/logo-mobile.svg") center no-repeat;
 }
 
 @media (min-width: $resolution__tablet) {

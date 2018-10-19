@@ -1,22 +1,45 @@
 .add-info {
   @include flex-column;
   align-items: flex-start;
-  min-height: 156px;
+  justify-content: space-around;
+  min-height: 158px;
   width: $width__mobil;
-  padding: 0;
+  padding: 15px 20px 10px  20px;
+  margin: 0;
   border: none;
   border-top: 1px solid $greyish__lighter;
   border-bottom: 1px solid $greyish__lighter;
   outline: 1px solid red;
+  position: relative;
 }
 
 .add-info__label {
-  margin: 25px 0 0 45px;
+  position: relative;
+  margin: 0 0 0 44px;
   padding: 0;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.add-info__label::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -44px;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #cdcdcd;
+  border-radius: 50%;
+}
+
+
+.add-info__input-radio:checked + .add-info__label::before {
+  top: 4px;
+  left: -35px;
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #68b738;
 }
 
 .add-info__input-radio {

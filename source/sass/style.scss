@@ -3,6 +3,10 @@
 @import "variables";
 @import "mixin";
 @import "global";
+@import "blocks/button";
+@import "blocks/label";
+@import "blocks/input";
+@import "blocks/textarea";
 @import "blocks/page";
 @import "blocks/header";
 @import "blocks/header-navigation";
@@ -22,13 +26,9 @@
 @import "blocks/form/programm-form";
 @import "blocks/form/client-info";
 @import "blocks/form/contact-details";
-@import "blocks/label";
-@import "blocks/input";
-@import "blocks/textarea";
 @import "blocks/form/comments";
 @import "blocks/form/complementary";
 @import "blocks/contact";
 @import "blocks/footer";
 @import "blocks/copyright";
 @import "blocks/social";
-@import "blocks/button";

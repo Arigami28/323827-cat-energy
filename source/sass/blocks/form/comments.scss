@@ -1,23 +1,31 @@
 .comments {
   @include flex-column;
+  justify-content: space-between;
   min-height: 240px;
   width: $width__mobil;
-  border: none;
-  padding: 0;
+  padding: 0 20px;
+  margin: 0;
   outline: 1px solid red;
+  position: relative;
 }
 
 .comments__caption {
-  margin: 28px 0 35px 0;
-  font-weight: normal;
   padding: 0;
+  margin: 12px 0 0 0;
+  font-weight: normal;
+}
+
+.comments__caption::before {
+  top: 27px;
+  right: 0;
+  width: 159px;
 }
 
 .comments__textarea {
   font-size: 16px;
   line-height: 1.13;
-  width: 263px;
-  height: 135px;
+  width: $block-size-mobil;
+  min-height: 150px;
   margin: 0 0 15px 0;
   padding: 13px 0  0 13px;
   border: 1px solid $greyish__lighter;

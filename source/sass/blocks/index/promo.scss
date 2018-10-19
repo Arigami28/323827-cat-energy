@@ -2,7 +2,7 @@
   @include flex-column;
   align-items: center;
   justify-content: flex-start;
-  background: $white;
+  background: $white url("../img/index-background-mobile@1x.jpg") top no-repeat;
   min-height: 502px;
   padding: 0 20px;
 }
@@ -14,16 +14,9 @@
   font-size: 36px;
   line-height: 1;
   text-align: center;
-  color: $black__dark;
+  color: $white;
   margin: 27px 0 0 0;
   padding: 0;
-}
-
-.promo__link {
-  font-size: 14px;
-  line-height: 1.29;
-  margin-bottom: 22px;
-  font-weight: normal;
 }
 
 .promo__sub-caption {
@@ -33,7 +26,7 @@
   text-align: center;
   font-weight: normal;
   text-transform: uppercase;
-  color: $black__dark;
+  color: $white;
   margin: 25px 0 0 0;
   padding: 0;
 }
@@ -41,7 +34,18 @@
 .promo__img {
   display: block;
   margin: 28px 0 0 0;
+  width: 280px;
+  height: 271px;
   padding: 0;
+}
+
+.promo__link {
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: normal;
+  margin: 3px 0 0;
+  padding: 10px 73px 12px 73px;
+  cursor: pointer;
 }
 
 @media (min-width: $resolution__tablet) {

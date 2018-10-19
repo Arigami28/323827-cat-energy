@@ -2,7 +2,7 @@
   @include flex-column;
   align-items: flex-start;
   width: $width__mobil;
-  min-height: 705px;
+  min-height: 737px;
 }
 
 /*элементы блока customer*/
@@ -11,7 +11,7 @@
   font-size: 36px;
   line-height: 1.67;
   font-weight: normal;
-  margin: 17px 0 0 0;
+  margin: 48px 0 0 0;
   padding: 0;
 }
 
@@ -26,7 +26,8 @@
 }
 
 .customer__text {
-  width: 266px;
+  text-align: left;
+  width: 280px;
   font-size: 14px;
   line-height: 1.29;
   color: $greyish;
@@ -52,10 +53,10 @@
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  padding: 13px 0 0 0;
+  padding: 13px 0 16px 0;
   border: 1px solid $color-customer__border;
   border-radius: 3px;
-  margin-right: 30px;
+  margin-right: 33px;
 
   &:nth-child(2n) {
     margin-right: 0;

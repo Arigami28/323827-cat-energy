@@ -1,7 +1,8 @@
 .advantages {
   @include flex-column;
   width: $width__mobil;
-  min-height: 427px;
+  justify-content: space-between;
+  min-height: 415px;
 }
 
 /*элементы блока advantages*/
@@ -10,23 +11,71 @@
   font-size: 36px;
   line-height: 1.5;
   font-weight: normal;
-  margin: 0 0 33px 0;
+  margin: 20px 0 0 0;
   padding: 0;
 }
 
 .advantages__list {
   @include flex-column;
   @include reset-list-style;
+  position: relative;
+  width: $block-size-mobil;
+  min-height: 310px;
   align-items: center;
+  outline: 1px solid red;
 }
 
 .advantages__list-item {
-  width: 200px;
-  min-height: 48px;
+  @include flex-row;
+  justify-content: flex-end;
+  align-items: center;
+  outline: 1px solid green;
+  text-align: left;
+  width: 100%;
+  min-height: 80px;
   font-size: 14px;
   line-height: 1.29;
-  margin: 0 0 26px 0;
+  margin: 0 0 0 0;
   color: $greyish;
+
+  p {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid blue;
+  }
+}
+
+.advantages__list-item::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__list-item_leaf::after {
+  top: 10px;
+  left: 0;
+  background: $color-categories-block url("../img/advantage-leaf@1x.png") center no-repeat;
+}
+
+.advantages__list-item_glass::after {
+  top: 90px;
+  left: 0;
+  background: $color-categories-block url("../img/advantage-powder@1x.png") center no-repeat;
+}
+
+.advantages__list-item_tableware::after {
+  top: 170px;
+  left: 0;
+  background: $color-categories-block  url("../img/advantage-leaf@1x.png") center no-repeat;
+}
+
+.advantages__list-item_clock::after {
+  top: 250px;
+  left: 0;
+  background: $color-categories-block  url("../img/advantage-leaf@1x.png") center no-repeat;
 }
 
 @media (min-width: $resolution__tablet) {

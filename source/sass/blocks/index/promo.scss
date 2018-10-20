@@ -1,5 +1,6 @@
 .promo {
   @include flex-column;
+  width: $width__mobil;
   align-items: center;
   justify-content: flex-start;
   background: $white url("../img/index-background-mobile@1x.jpg") top no-repeat;
@@ -51,11 +52,12 @@
 
 @media (min-width: $resolution__tablet) {
   .promo {
+    width: $block-size-tablet;
     justify-content: flex-start;
     align-items: flex-start;
-    background: none;
     min-height: 866px;
     padding: 0;
+    background: url("../img/index-can-tablet@1x.jpg") bottom center no-repeat;
   }
 
   .promo__caption {
@@ -63,12 +65,25 @@
     width: 450px;
     font-size: 60px;
     color: $black__dark;
+    margin: 55px 0 0 87px;
   }
 
   .promo__sub-caption {
+    margin: 44px 0 0 87px;
     font-size: 20px;
     color: $black__dark;
     text-align: left;
+  }
+
+  .promo__link {
+    font-size: 20px;
+    line-height: 1;
+    margin: 47px 0 0 89px;
+    padding: 17px 29px 15px 26px;
+  }
+
+  .promo__img {
+    display: none;
   }
 }
 

@@ -40,6 +40,7 @@
     width: 200px;
     margin: 0;
     padding: 0;
+    outline: 1px solid red;
   }
 }
 
@@ -66,23 +67,24 @@
 .advantages__list-item_tableware::after {
   top: 170px;
   left: 0;
-  background: $color-categories-block  url("../img/advantage-leaf@1x.png") center no-repeat;
+  background: $color-categories-block  url("../img/advantage-dining@1x.png") center no-repeat;
 }
 
 .advantages__list-item_clock::after {
   top: 250px;
   left: 0;
-  background: $color-categories-block  url("../img/advantage-leaf@1x.png") center no-repeat;
+  background: $color-categories-block  url("../img/advantage-clock@1x.png") center no-repeat;
 }
 
 @media (min-width: $resolution__tablet) {
   .advantages {
     width: $width__tablet;
     min-height: 750px;
+    border-bottom: $grey-border;
   }
 
   .advantages__caption {
-    margin: 15px 0 70px 0;
+    margin: 15px 0 0 0;
     width: 381px;
     font-size: 60px;
     line-height: 1;
@@ -91,19 +93,69 @@
   .advantages__list {
     @include flex-row;
     align-items: flex-start;
-    justify-content: flex-start;
+    align-content: space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: $block-size-tablet;
-    min-height: 557px;
+    min-height: 550px;
+    outline: 1px solid red;
+    margin-bottom: 55px;
   }
 
   .advantages__list-item {
-    min-height: 285px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 235px;
     width: 354px;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 0 0  0;
+    margin: 0 0 0 0;
     padding-top: 0;
+    outline: 1px solid red;
+
+    p {
+      width: 250px;
+      margin-top: 116px;
+    }
+
+    &:nth-child(2n) p {
+      margin-left: 30px;
+    }
+  }
+
+  .advantages__list-item::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+  }
+
+  .advantages__list-item_leaf::after {
+    top: 3px;
+    left: 0;
+    background: $color-categories-block url("../img/advantage-leaf@1x.png") center no-repeat;
+  }
+
+  .advantages__list-item_glass::after {
+    top: 3px;
+    left: auto;
+    right: 244px;
+    background: $color-categories-block url("../img/advantage-powder@1x.png") center no-repeat;
+  }
+
+  .advantages__list-item_tableware::after {
+    top: 5px;
+    left: 0;
+    background: $color-categories-block  url("../img/advantage-dining@1x.png") center no-repeat;
+  }
+
+  .advantages__list-item_clock::after {
+    top: 5px;
+    left: auto;
+    right: 244px;
+    background: $color-categories-block  url("../img/advantage-clock@1x.png") center no-repeat;
   }
 }
 

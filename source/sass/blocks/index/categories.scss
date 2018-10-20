@@ -44,6 +44,7 @@
 
 .categories__link {
   @include reset-link-style;
+  position: relative;
   width: 100px;
   font-family: $oswald;
   font-size: 16px;
@@ -57,14 +58,14 @@
   display: block;
   position: absolute;
   content: "";
-  bottom: 24px;
-  left: 116px;
+  bottom: 3px;
+  right: -21px;
   width: 25px;
   height: 12px;
   background: url("../img/icon-right-arrow-long.svg") center no-repeat;
 }
 
-.categories__caption::after {
+.categories__block::after {
   content: "";
   display: block;
   position: absolute;
@@ -108,25 +109,28 @@
   }
 
   .categories__block {
-    justify-content: flex-start;
     width: $block-size-tablet;
+    justify-content: flex-start;
     min-height: 372px;
+    padding: 0 53px;
+    margin-bottom: 30px;
   }
 
   .categories__caption {
     font-size: 36px;
     line-height: 1.03;
     text-align: left;
-    margin: 76px 0 25px 53px;
+    margin: 76px 0 0 0;
   }
 
   .categories__text {
     width: 380px;
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 0 0 52px;
+    margin: 15px 0 0 0;
     border-bottom: none;
     text-align: left;
+    align-self: normal;
   }
 
   .categories__link {
@@ -134,7 +138,38 @@
     font-size: 20px;
     line-height: 1;
     text-align: left;
-    margin: 43px 0 0 53px;
+    margin: 43px 0 0 0;
+  }
+
+  .categories__block::after {
+    left: auto;
+    right: 62px;
+    top: 93px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .categories__caption_icon-seated-cat::before {
+    left: auto;
+    right: 92px;
+    top: 81px;
+    width: 141px;
+    height: 194px;
+  }
+
+
+  .categories__caption_icon-going-cat::before {
+    left: auto;
+    right: 30px;
+    top: 135px;
+    width: 268px;
+    height: 113px;
+  }
+
+  .categories__link::before {
+    left: auto;
+    bottom: 3px;
+    right: -38px;
   }
 }
 

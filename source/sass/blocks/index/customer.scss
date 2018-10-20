@@ -35,7 +35,7 @@
   padding: 0;
 }
 
-.customer-wrapper {
+.customer__wrapper {
   @include flex-row;
   width: $block-size-mobil;
   flex-wrap: wrap;
@@ -81,12 +81,10 @@
 @media (min-width: $resolution__tablet) {
   .customer {
     width: $width__tablet;
-    background-color: $white;
-    background-image: linear-gradient(to top, $greyish__light 460px, transparent 460px);
     min-height: 1081px;
   }
 
-  .customer-wrapper {
+  .customer__wrapper {
     justify-content: flex-start;
     align-items: flex-end;
     margin: 53px 0 0 0;
@@ -118,10 +116,12 @@
 
   .customer__advantages {
     align-items: center;
-    padding: 15px 18px 14px 19px;
+    /*padding: 15px 18px 14px 19px;*/
     font-size: 30px;
     line-height: 1.23;
     margin-right: 44px;
+    width: 162px;
+    height: 72px;
   }
 
   .customer__sub-advantages {
@@ -154,7 +154,7 @@
     margin: 145px 0 0 81px;
   }
 
-  .customer-wrapper {
+  .customer__wrapper {
     align-items: flex-start;
     justify-content: flex-start;
     min-height: 200px;

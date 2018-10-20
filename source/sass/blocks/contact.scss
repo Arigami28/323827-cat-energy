@@ -47,15 +47,17 @@
 @media (min-width: $resolution__tablet) {
   .contact {
     margin: 0 auto;
+    padding: 0;
     width: $width__tablet;
     min-height: 598px;
   }
 
   .contact__wrapper {
     justify-content: space-between;
-    min-height: 83px;
-    width: 628px;
-    margin: 0  0 55px 0;
+    align-items: center;
+    min-height: 201px;
+    padding: 5px 70px 0 70px;
+    outline: 1px solid red;
   }
 
   .contact__caption {
@@ -77,10 +79,17 @@
   .contact__address-city {
     margin: 18px 0 0 0;
   }
+
+  .contact__map {
+    width: 767px;
+    height: 400px;
+    margin: 0;
+  }
 }
 
 @media (min-width: $resolution__desktop) {
   .contact {
+    justify-content: flex-start;
     margin: 0 auto;
     position: relative;
     width: $width__desktop;

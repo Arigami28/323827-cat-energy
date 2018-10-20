@@ -35,6 +35,11 @@
     padding: 0 30px;
     width: $width__tablet;
   }
+
+  .page__customer {
+    background-color: $white;
+    background-image: linear-gradient(to top, transparent  460px, $white 460px), linear-gradient(to right, #dcdcdc 0%, #dcdcdc 50%, #ebebeb 50%, #ebebeb 100%);
+  }
 }
 
 @media (min-width: $resolution__desktop) {

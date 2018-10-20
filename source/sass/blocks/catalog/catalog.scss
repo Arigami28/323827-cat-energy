@@ -29,19 +29,21 @@
 @media (min-width: $resolution__tablet) {
   .catalog {
     width: $width__tablet;
+    border-top: none;
   }
 
   .catalog__caption {
     font-size: 60px;
     line-height: 1;
     padding: 0;
-    margin: 0;
+    margin: 56px 0 0 0;
   }
 
   .catalog__wrapper {
     @include flex-row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0;
   }
 }
 

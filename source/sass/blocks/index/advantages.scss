@@ -40,7 +40,6 @@
     width: 200px;
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
   }
 }
 
@@ -98,8 +97,8 @@
     flex-wrap: wrap;
     width: $block-size-tablet;
     min-height: 550px;
-    outline: 1px solid red;
     margin-bottom: 55px;
+    counter-reset: section;
   }
 
   .advantages__list-item {
@@ -112,7 +111,7 @@
     line-height: 1.5;
     margin: 0 0 0 0;
     padding-top: 0;
-    outline: 1px solid red;
+    z-index: 2;
 
     p {
       width: 250px;
@@ -122,6 +121,24 @@
     &:nth-child(2n) p {
       margin-left: 30px;
     }
+  }
+
+  .advantages__list-item::before {
+    display: block;
+    position: absolute;
+    top: -36px;
+    left: 118px;
+    counter-increment: section;
+    content: counter(section);
+    z-index: -1;
+    font-family: $oswald;
+    font-size: 281px;
+    line-height: 1;
+    color: #f2f2f2;
+  }
+
+  .advantages__list-item:nth-child(2n)::before {
+    left: 130px;
   }
 
   .advantages__list-item::after {
@@ -137,6 +154,7 @@
     left: 0;
     background: $color-categories-block url("../img/advantage-leaf@1x.png") center no-repeat;
   }
+
 
   .advantages__list-item_glass::after {
     top: 3px;

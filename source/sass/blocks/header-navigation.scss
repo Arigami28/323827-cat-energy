@@ -41,6 +41,10 @@
   width: 100%;
   margin: 0;
   padding: 0;
+
+  &:last-child {
+    border-bottom: $grey-border;
+  }
 }
 
 @media (min-width: $resolution__tablet) {

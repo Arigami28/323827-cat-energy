@@ -30,6 +30,11 @@
   width: 100%;
 }
 
+.page__header .page__wrapper {
+  @include flex-column;
+  align-items: center;
+}
+
 @media (min-width: $resolution__tablet) {
   .page__wrapper {
     padding: 0 30px;
@@ -38,7 +43,7 @@
 
   .page__customer {
     background-color: $white;
-    background-image: linear-gradient(to top, transparent  460px, $white 460px), linear-gradient(to right, #dcdcdc 0%, #dcdcdc 50%, #ebebeb 50%, #ebebeb 100%);
+    background-image: linear-gradient(to top, transparent  460px, $white 460px), linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
   }
 }
 

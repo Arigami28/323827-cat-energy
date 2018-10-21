@@ -48,8 +48,8 @@
 @media (min-width: $resolution__tablet) {
   .additional-item {
     padding: 0 38px 0 38px;
-    width: 631px;
-    min-height: 138px;
+    width: 100%;
+    min-height: 140px;
     margin: -1px 0 0 0;
     border: $grey-border;
   }
@@ -63,7 +63,7 @@
 
   .additional-item__wrapper {
     @include flex-row;
-    margin: 26px 0 0 0;
+    margin: 26px 0 8px 0;
     justify-content: space-between;
   }
 
@@ -77,6 +77,10 @@
 
   .additional-item__price {
     margin-left: 52px;
+  }
+
+  .additional-item__button {
+    padding: 10px 287px 10px 285px;
   }
 }
 

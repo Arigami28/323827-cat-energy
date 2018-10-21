@@ -30,6 +30,9 @@
   .catalog {
     width: $width__tablet;
     border-top: none;
+    min-height: 2485px;
+    align-items: stretch;
+    justify-content: space-between;
   }
 
   .catalog__caption {

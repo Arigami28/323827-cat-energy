@@ -7,10 +7,12 @@
 
 .additional-promo__wrapper {
   @include flex-row;
+  position: relative;
   justify-content: center;
   align-items: flex-end;
   width: $block-size-mobil;
   min-height: 289px;
+  margin-top: 3px;
   background: $green url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
 }
 
@@ -25,25 +27,42 @@
   padding: 0;
 }
 
+.additional-promo__text::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 65px;
+  left: 40%;
+  width: 56px;
+  height: 61px;
+  background: url("../img/icon-gift.svg") center no-repeat;
+}
+
 @media (min-width: $resolution__tablet) {
   .additional-promo {
-    min-height: 347px;
+    min-height: 337px;
   }
 
   .additional-promo__wrapper {
     justify-content: flex-end;
     align-items: center;
-    margin: 70px 0 0 0;
+    margin: 0 0 0 0;
+    padding: 0;
     width: $block-size-tablet;
-    height: 200px;
+    min-height: 200px;
     background: $green url("../img/gift-photo-tablet@1x.jpg") no-repeat;
     background-size: cover;
   }
 
   .additional-promo__text {
-    margin: 0 115px 0 0;
+    margin: 25px 115px 0 0;
     width: 170px;
     text-align: left;
+  }
+
+  .additional-promo__text::after {
+    top: 65px;
+    left: 90px;
   }
 }
 

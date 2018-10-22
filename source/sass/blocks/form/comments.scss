@@ -6,18 +6,24 @@
   padding: 0 20px;
   margin: 0;
   position: relative;
+  border: none;
 }
 
 .comments__caption {
   padding: 0;
-  margin: 12px 0 0 0;
+  margin: 15px 0 0 0;
   font-weight: normal;
 }
 
 .comments__caption::before {
-  top: 27px;
-  right: 0;
-  width: 159px;
+  display: block;
+  position: absolute;
+  content: "";
+  top: 29px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent 50%, #68b738 50%);
 }
 
 .comments__textarea {
@@ -26,7 +32,7 @@
   width: $block-size-mobil;
   min-height: 150px;
   margin: 0 0 15px 0;
-  padding: 13px 0  0 13px;
+  padding: 13px 0 0 13px;
   border: $grey-border;
   text-transform: uppercase;
   resize: none;
@@ -34,22 +40,32 @@
 
 @media (min-width: $resolution__tablet) {
   .comments {
-    min-height: 328px;
+    min-height: 350px;
     width: $width__tablet;
+    padding: 0 30px;
+    align-items: center;
   }
 
   .comments__caption {
+    align-self: flex-start;
     font-size: 36px;
     line-height: 1;
+    margin: 55px 0 0 39px;
   }
 
   .comments__textarea {
-    padding: 8px 0  0 18px;
-    margin: 0 0 0 40px;
-    width: 610px;
-    height: 160px;
+    padding: 8px 0 0 18px;
+    margin: 0 0 7px 0;
+    width: 630px;
+    min-height: 173px;
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  .comments__caption::before {
+    top: 79px;
+    left: 0;
+    background: linear-gradient(to right, #68b738 4%, transparent 4%, transparent 38%, #68b738  38%);
   }
 }
 
@@ -58,7 +74,6 @@
     min-height: 360px;
     width: $width__desktop;
   }
-
 
   .comments__textarea {
     margin: 0 0 0 0;

@@ -77,6 +77,10 @@
     &:first-child {
       width: 70px;
     }
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 

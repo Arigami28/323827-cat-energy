@@ -47,13 +47,15 @@
   .client-info {
     width: $width__tablet;
     margin: 0 0 0 0;
+    padding: 0 70px 0 30px;
+    min-height: 450px;
   }
 
   .client-info__caption {
     font-size: 20px;
     line-height: 1.5;
     width: 350px;
-    margin: 55px 0 65px 40px;
+    margin: 55px 0 66px 40px;
   }
 
   .client-info__wrapper {
@@ -67,6 +69,10 @@
 
   .client-info__label_weight {
     margin-right: 19px;
+  }
+
+  .client-info__input-text {
+    padding: 15px 0 16px 17px;
   }
 }
 

@@ -48,13 +48,33 @@
 
 @media (min-width: $resolution__tablet) {
   .add-info {
-    width: 628px;
-    min-height: 194px;
+    justify-content: flex-start;
+    width: 631px;
+    min-height: 195px;
     border: $grey-border;
+    padding: 0;
   }
 
   .add-info__label {
-    margin: 33px 0 0 86px;
+    font-family: $oswald;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.13;
+    margin: 31px 0 0 88px;
+  }
+
+  .add-info__label::after {
+    top: -8px;
+    left: -59px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .add-info__input-radio:checked + .add-info__label::before {
+    top: 4px;
+    left: -48px;
+    width: 18px;
+    height: 18px;
   }
 }
 

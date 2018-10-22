@@ -14,9 +14,14 @@
 }
 
 .complementary__caption::before {
+  display: block;
+  position: absolute;
+  content: "";
   top: 26px;
-  right: 0;
-  width: 136px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent 57%, #68b738 57%);
 }
 
 .complementary__label {
@@ -49,20 +54,50 @@
 @media (min-width: $resolution__tablet) {
   .complementary {
     width: $width__tablet;
+    align-items: flex-start;
+    justify-content: space-between;
     min-height: 282px;
+    padding: 0 30px;
+    margin: 0;
   }
 
   .complementary__caption {
-    margin: 68px 0 0 40px;
+    margin: 57px 0 0 40px;
   }
 
   .complementary__wrapper {
     @include flex-row;
-    justify-content: flex-start;
-    width: 576px;
-    min-height: 120px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+    align-self: normal;
+    width: 596px;
     flex-wrap: wrap;
-    margin: 57px 0 0 38px;
+    min-height: 151px;
+    margin: 0 0 0 72px;
+  }
+
+  .complementary__label {
+    width: 225px;
+    margin: 0 0 0 25px;
+  }
+
+  .complementary__label::after {
+    top: -9px;
+    left: -57px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .complementary__input-checkbox:checked + .complementary__label::after {
+    background: url("../img/icon-tick.svg") center no-repeat;
+    background-size: 21px 16px;
+  }
+
+  .complementary__caption::before {
+    top: 80px;
+    left: 0;
+    background: linear-gradient(to right, #68b738 4%, transparent 4%, transparent 42%, #68b738  42%);
   }
 }
 

@@ -20,13 +20,13 @@
 @media (min-width: $resolution__tablet) {
   .header {
     @include flex-row;
+    width: $block-size-tablet;
     align-items: flex-end;
     justify-content: flex-end;
     min-height: 83px;
   }
 
   .header__logo {
-    display: block;
     top: auto;
     bottom: 0;
     left: 0;
@@ -38,13 +38,16 @@
 
 @media (min-width: $resolution__desktop) {
   .header {
-    align-items: center;
+    width: $block-size-desktop;
+    align-items: flex-end;
     min-height: 120px;
   }
 
   .header__logo {
+    bottom: 6px;
+    left: -1px;
     width: 203px;
     height: 60px;
-    background: $white url("../../img/logo-desktop.svg") center no-repeat;
+    background: $white url("../img/logo-desktop.svg") center no-repeat;
   }
 }

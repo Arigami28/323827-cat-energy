@@ -13,7 +13,7 @@
 }
 
 .page__customer {
-  background-color: $greyish__light;
+  background: $white linear-gradient(to bottom, transparent 4.3%, $greyish__light 4.3%);
 }
 
 .page__footer {
@@ -25,14 +25,14 @@
   background-color: $greyish__light;
 }
 
-.page__wrapper_default {
-  padding: 0;
-  width: 100%;
-}
-
 .page__header .page__wrapper {
   @include flex-column;
   align-items: center;
+}
+
+.page__wrapper_default {
+  padding: 0;
+  width: 100%;
 }
 
 @media (min-width: $resolution__tablet) {
@@ -42,13 +42,19 @@
   }
 
   .page__customer {
-    background-color: $white;
-    background-image: linear-gradient(to top, transparent  460px, $white 460px), linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
+    border-top: $grey-border;
+    background: $white linear-gradient(to top, transparent  460px, $white 460px), linear-gradient(to right, #f2f2f2 0%, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
+  }
+
+  .page__wrapper_default {
+    padding: 0;
+    width: 100%;
   }
 }
 
 @media (min-width: $resolution__desktop) {
   .page__wrapper {
+    outline: 1px solid purple;
     padding: 0 40px;
     width: $width__desktop;
   }
@@ -56,5 +62,10 @@
   .page__wrapper_bg {
     background: $white url("../img/index-background-desktop@1x.jpg") right 1px  top   no-repeat;
     background-size: 50%;
+  }
+
+  .page__wrapper_default {
+    padding: 0;
+    width: 100%;
   }
 }

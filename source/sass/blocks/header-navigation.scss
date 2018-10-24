@@ -86,12 +86,11 @@
 
 @media (min-width: $resolution__desktop) {
   .header-navigation {
-    margin: 0;
+    margin-bottom: 23px;
   }
 
   .header-navigation__list {
     width: auto;
-    margin: 48px 77px 0 0;
   }
 
   .header-navigation__list-item {

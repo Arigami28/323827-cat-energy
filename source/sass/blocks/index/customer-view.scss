@@ -56,10 +56,11 @@
 @media (min-width: $resolution__desktop) {
   .customer-view {
     min-height: 583px;
-    margin: 0 0 0 0;
+    margin: 12px 0 0 0;
   }
 
   .customer-view__wrapper {
+    align-self: flex-end;
     width: 570px;
     margin: 0 0 0 0;
   }

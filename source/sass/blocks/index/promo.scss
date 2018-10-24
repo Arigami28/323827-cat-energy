@@ -89,8 +89,23 @@
 
 @media (min-width: $resolution__desktop) {
   .promo {
-    width: $width__desktop;
+    width: $block-size-desktop;
     background: none;
     min-height: 576px;
+    padding: 0 0 0 80px;
+  }
+
+  .promo__caption {
+    text-align: left;
+    line-height: 1;
+    margin: 101px 0 0 0;
+  }
+
+  .promo__sub-caption {
+    margin: 42px 0 0 0;
+  }
+
+  .promo__link {
+    margin: 53px 0 0 0;
   }
 }

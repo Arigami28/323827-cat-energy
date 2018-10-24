@@ -1,7 +1,7 @@
 .customer {
   @include flex-column;
   align-items: flex-start;
-  width: $width__mobil;
+  width: $block-size-mobil;
   min-height: 737px;
 }
 
@@ -80,7 +80,7 @@
 
 @media (min-width: $resolution__tablet) {
   .customer {
-    width: $width__tablet;
+    width: $block-size-tablet;
     min-height: 1081px;
   }
 
@@ -138,19 +138,20 @@
 
 @media (min-width: $resolution__desktop) {
   .customer {
-    width: $width__desktop;
-    min-height: 658px;
+    @include flex-row;
+    justify-content: space-between;
+    width: $block-size-desktop;
+    min-height: 669px;
     background: none;
-    flex-wrap: wrap;
   }
 
   .customer__caption {
-    margin: 62px 0 0 81px;
+    margin: 72px 0 0 0;
   }
 
   .customer__text {
     width: 435px;
-    margin: 145px 0 0 81px;
+    margin: 145px 0 0 0;
   }
 
   .customer__wrapper {
@@ -159,7 +160,7 @@
     min-height: 200px;
     width: 370px;
     flex-wrap: wrap;
-    margin: 69px 0 0 81px;
+    margin: 69px 0 0 0;
   }
 
   .customer-sub__caption {

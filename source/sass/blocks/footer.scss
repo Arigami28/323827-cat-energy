@@ -1,5 +1,6 @@
 .footer {
   @include flex-column;
+  width: $block-size-mobil;
   background-color: $greyish__light;
   justify-content: flex-start;
   align-items: center;
@@ -20,7 +21,7 @@
 @media (min-width: $resolution__tablet) {
   .footer {
     @include flex-row;
-    width: $width__tablet;
+    width: $block-size-tablet;
     min-height: 152px;
     justify-content: space-between;
   }
@@ -34,6 +35,6 @@
 
 @media (min-width: $resolution__desktop) {
   .footer {
-    width: $width__desktop;
+    width: $block-size-desktop;
   }
 }

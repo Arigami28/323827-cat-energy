@@ -46,9 +46,9 @@
 
 @media (min-width: $resolution__tablet) {
   .contact {
+    width: 100%;
     margin: 0 auto;
     padding: 0;
-    width: 100%;
     min-height: 598px;
   }
 
@@ -91,7 +91,6 @@
     justify-content: flex-start;
     margin: 0 auto;
     position: relative;
-    width: $width__desktop;
     min-height: 400px;
   }
 
@@ -106,20 +105,15 @@
     width: 570px;
     height: 201px;
     background-color: $white;
+    padding: 0;
   }
 
   .contact__caption {
-    margin-top: 67px;
     margin-left: 77px;
   }
 
   .contact__address {
     text-align: left;
-    margin-top: 65px;
     margin-left: 100px;
-  }
-
-  .contact__map {
-    display: none;
   }
 }

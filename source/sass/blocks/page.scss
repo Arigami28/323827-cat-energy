@@ -7,7 +7,6 @@
 }
 
 .page__wrapper {
-  position: relative;
   width: $width__mobil;
   margin: 0 auto;
   padding: 0 20px;
@@ -36,6 +35,10 @@
   justify-content: center;
   padding: 0;
   width: 100%;
+}
+
+.page__additional {
+  position: relative;
 }
 
 @media (min-width: $resolution__tablet) {
@@ -80,9 +83,5 @@
   .page__catalog .page__wrapper_default {
     padding: 0 40px;
     width: $width__desktop;
-  }
-
-  .page__additional {
-    position: relative;
   }
 }

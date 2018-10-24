@@ -91,11 +91,21 @@
   }
 
   .catalog-extension__caption {
-    margin: 162px 0 0 0;
+    margin: 0 0 25px 0;
   }
 
   .catalog-extension__text {
-    margin: 27px 0 0 0;
+    margin: 0 0 84px 0;
     line-height: normal;
+  }
+
+  .catalog-extension__button {
+    margin: 0 0 35px 0;
+    /*padding: 10px 79px 10px 81px;*/
+    padding: 13px 39px 12px 41px;
+  }
+
+  .catalog-extension__button-plus {
+    margin: 0 0 50px 0;
   }
 }

@@ -88,20 +88,28 @@
   .additional-item {
     @include flex-row;
     justify-content: space-between;
+    align-items: center;
     border-right: none;
     border-left: none;
     width: 895px;
-    min-height: 71px;
+    min-height: 73px;
     padding: 0;
-    margin-left: 77px;
   }
 
   .additional-item__wrapper {
-    margin-left: 3px;
+    margin: 0 0 0 0;
     width: 612px;
+    height: 71px;
+    align-items: center;
   }
 
   .additional-item__description {
+    padding: 6px 0 0 0;
     width: 287px;
+  }
+
+  .additional-item__button {
+    margin: 0;
+    padding: 10px 93px 12px 91px;
   }
 }

@@ -28,7 +28,7 @@
 
 @media (min-width: $resolution__tablet) {
   .catalog {
-    width: $width__tablet;
+    width: $block-size-tablet;
     border-top: none;
     min-height: 2485px;
     align-items: stretch;
@@ -52,6 +52,12 @@
 
 @media (min-width: $resolution__desktop) {
   .catalog {
-    width: $width__desktop;
+    min-height: 1350px;
+    justify-content: flex-start;
+    width: $block-size-desktop;
+  }
+
+  .catalog__caption {
+    margin: 66px 0 80px 0;
   }
 }

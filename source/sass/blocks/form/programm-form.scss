@@ -73,10 +73,12 @@
 
   .programm-form__wrapper {
     @include flex-row;
-    min-height: 159px;
-    padding: 0 70px;
-    align-items: flex-start;
+    width: $block-size-tablet;
     justify-content: flex-start;
+    min-height: 159px;
+    padding: 0 30px;
+    align-items: flex-start;
+    outline: 1px solid red;
   }
 
   .programm-form__client {
@@ -90,7 +92,7 @@
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
-    margin: 35px 0 0 0;
+    margin: 36px 0 0 11px;
     padding: 17px 67px 15px 63px;
   }
 

@@ -2,8 +2,8 @@
   @include flex-column;
   justify-content: space-between;
   min-height: 240px;
-  width: $width__mobil;
-  padding: 0 20px;
+  width: $block-size-mobil;
+  padding: 0;
   margin: 0;
   position: relative;
   border: none;
@@ -32,7 +32,7 @@
   width: $block-size-mobil;
   min-height: 150px;
   margin: 0 0 15px 0;
-  padding: 13px 0 0 13px;
+  padding: 11px 0 0 13px;
   border: $grey-border;
   text-transform: uppercase;
   resize: none;

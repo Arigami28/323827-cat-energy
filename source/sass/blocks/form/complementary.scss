@@ -1,16 +1,24 @@
 .complementary {
   @include flex-column;
+  justify-content: space-between;
   min-height: 262px;
-  width: $width__mobil;
+  width: $block-size-mobil;
   border: none;
-  padding: 0 20px;
+  padding: 0;
   margin: 0;
   position: relative;
 }
 
+.complementary__wrapper {
+  @include flex-column;
+  width: 100%;
+  min-height: 186px;
+}
+
 .complementary__caption {
   font-weight: normal;
-  margin: 13px 0 40px 0;
+  margin: 11px 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .complementary__caption::before {
@@ -47,9 +55,6 @@
   display: none;
 }
 
-.complementary__wrapper {
-  @include flex-column;
-}
 
 @media (min-width: $resolution__tablet) {
   .complementary {

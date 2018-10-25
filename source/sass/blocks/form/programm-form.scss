@@ -1,7 +1,7 @@
 .programm-form {
   @include flex-column;
   width: $width__mobil;
-  align-items: flex-start;
+  align-items: center;
   border-top: $grey-border;
   min-height: 1358px;
 }
@@ -11,7 +11,8 @@
   font-size: 36px;
   line-height: 1.67;
   font-weight: normal;
-  margin: 15px 0 0 20px;
+  margin: 15px 0 25px 20px;
+  align-self: flex-start;
 }
 
 .programm-form__caption {
@@ -32,7 +33,7 @@
 
 .programm-form__wrapper {
   @include flex-column;
-  width: 100%;
+  width: $block-size-mobil;
   align-items: center;
 }
 
@@ -42,6 +43,12 @@
 
 .programm-form__button {
   padding: 10px 77px 10px 80px;
+}
+
+.programm-form__client {
+  @include flex-column;
+  align-items: center;
+  width: 100%;
 }
 
 @media (min-width: $resolution__tablet) {
@@ -108,6 +115,7 @@
     @include flex-row;
     width: $width__desktop;
     align-items: flex-end;
+    outline: 1px solid red;
   }
 
   .programm-form__wrapper {

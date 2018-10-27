@@ -9,10 +9,27 @@
   border: none;
 }
 
+.comments::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 29px;
+  left: -50vw;
+  width: 150vw;
+  height: 3px;
+  z-index: 1;
+  background: #68b738;
+}
+
 .comments__caption {
   padding: 0;
-  margin: 15px 0 0 0;
+  margin: 15px 0 0 -20px;
   font-weight: normal;
+  display: block;
+  width: 160px;
+  z-index: 2;
+  background: white;
+  text-align: center;
 }
 
 .comments__textarea {
@@ -35,11 +52,16 @@
     align-items: center;
   }
 
+  .comments::after {
+    top: 80px;
+  }
+
   .comments__caption {
     align-self: flex-start;
     font-size: 36px;
     line-height: 1;
-    margin: 57px 0 0 10px;
+    margin: 57px 0 0 -30px;
+    width: 259px;
   }
 
   .comments__textarea {
@@ -59,8 +81,12 @@
     padding: 0;
   }
 
+  .comments::after {
+    top: 53px;
+  }
+
   .comments__caption {
-    margin: 30px 0 0 0;
+    margin: 30px 0 0 -40px;
   }
 
   .comments__textarea {

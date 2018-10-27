@@ -9,6 +9,18 @@
   position: relative;
 }
 
+.complementary::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 26px;
+  left: -50vw;
+  width: 150vw;
+  height: 3px;
+  z-index: 1;
+  background: #68b738;
+}
+
 .complementary__wrapper {
   @include flex-column;
   width: 100%;
@@ -17,8 +29,12 @@
 
 .complementary__caption {
   font-weight: normal;
-  margin: 11px 0 0 0;
+  margin: 11px 0 0 -20px;
   padding: 0 0 0 0;
+  width: 182px;
+  z-index: 2;
+  background: white;
+  text-align: center;
 }
 
 
@@ -56,8 +72,13 @@
     margin: 0;
   }
 
+  .complementary::after {
+    top: 81px;
+  }
+
   .complementary__caption {
-    margin: 58px 0 0 9px;
+    margin: 58px 0 0 -30px;
+    width: 292px;
   }
 
   .complementary__wrapper {
@@ -98,8 +119,12 @@
     position: relative;
   }
 
+  .complementary::after {
+    top: 46px;
+  }
+
   .complementary__caption {
-    margin: 23px 0 0 0;
+    margin: 23px 0 0 -40px;
   }
 
   .complementary__wrapper {

@@ -60,14 +60,17 @@
   .page__catalog .page__wrapper_default {
     padding: 0 30px;
   }
+
+  .page__programm .page__wrapper_default {
+    padding: 0 30px;
+    width: $width__tablet;
+  }
 }
 
 @media (min-width: $resolution__desktop) {
   .page__wrapper {
-    outline: 1px solid purple;
     padding: 0 40px;
     width: $width__desktop;
-    overflow: hidden;
   }
 
   .page__wrapper_bg {
@@ -81,6 +84,11 @@
   }
 
   .page__catalog .page__wrapper_default {
+    padding: 0 40px;
+    width: $width__desktop;
+  }
+
+  .page__programm .page__wrapper_default {
     padding: 0 40px;
     width: $width__desktop;
   }

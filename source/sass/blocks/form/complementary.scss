@@ -54,12 +54,10 @@
     min-height: 282px;
     padding: 0 30px;
     margin: 0;
-    outline: 1px solid green;
   }
 
   .complementary__caption {
     margin: 58px 0 0 9px;
-    outline: 1px solid red;
   }
 
   .complementary__wrapper {
@@ -71,7 +69,6 @@
     width: 100%;
     min-height: 150px;
     margin: 0 0 0 0;
-    outline: 1px solid red;
   }
 
   .complementary__label {
@@ -94,18 +91,67 @@
 
 @media (min-width: $resolution__desktop) {
   .complementary {
-    min-height: 70px;
-    width: $width__desktop;
+    justify-content: space-between;
+    min-height: 165px;
+    padding: 0;
+    width: $block-size-desktop;
+    position: relative;
   }
 
   .complementary__caption {
-    margin: 60px 0 0 0;
+    margin: 23px 0 0 0;
   }
 
   .complementary__wrapper {
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
     margin: 0;
-    width: auto;
-    min-height: 100px;
+    width: 100%;
+    min-height: 40px;
+  }
+
+  .complementary__label {
+    width: 285px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
+
+  .complementary__label::after {
+    top: -7px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .complementary__label_sweetener {
+    padding: 0 0 0 57px;
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  .complementary__label_water {
+    padding: 0 0 0 71px;
+
+    &::after {
+      left: 13px;
+    }
+  }
+
+  .complementary__label_milk {
+    padding: 0 0 0 85px;
+
+    &::after {
+      left: 27px;
+    }
+  }
+
+  .complementary__label_vitamins {
+    padding: 0 0 0 98px;
+
+    &::after {
+      left: 40px;
+    }
   }
 }

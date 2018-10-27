@@ -6,7 +6,6 @@
   margin: 0;
   width: $block-size-mobil;
   min-height: 260px;
-  outline: 1px solid blue;
 }
 
 .client-info__wrapper {
@@ -14,7 +13,6 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  outline: 1px solid red;
 }
 
 .client-info__content {
@@ -24,7 +22,6 @@
   min-height: 160px;
   padding: 0 0 0 0;
   margin: 0 0 22px 0;
-  outline: 1px solid green;
 }
 
 .client-info__caption {
@@ -76,7 +73,6 @@
     min-height: 200px;
     padding: 0 0 0 0;
     margin: 0 0 50px 0;
-    outline: 1px solid green;
   }
 
   .client-info__wrapper {
@@ -108,22 +104,33 @@
 
 @media (min-width: $resolution__desktop) {
   .client-info {
-    width: 50%;
+    width: 570px;
+    min-height: 400px;
+    margin: 0 0 0 0;
   }
 
   .client-info__caption {
-    margin: 55px 0 65px 0;
+    margin: 55px 0 0 0;
+  }
+
+  .client-info__content {
+    margin: 0;
   }
 
   .client-info__wrapper {
+    width: 100%;
     margin: 0 0 20px 0;
   }
 
-  .client-info__label {
-    margin: 0 16px 0 0;
+  .client-info__input-text_name {
+    width: 507px;
   }
 
-  .client-info__label_weight {
-    margin-right: 19px;
+  .client-info__input-text_weight {
+    width: 475px;
+  }
+
+  .client-info__input-text_age {
+    width: 436px;
   }
 }

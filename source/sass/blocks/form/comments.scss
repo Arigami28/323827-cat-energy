@@ -33,7 +33,6 @@
     width: $block-size-tablet;
     padding: 0 30px;
     align-items: center;
-    outline: 1px solid red;
   }
 
   .comments__caption {
@@ -56,12 +55,17 @@
 @media (min-width: $resolution__desktop) {
   .comments {
     min-height: 360px;
-    width: $width__desktop;
+    width: $block-size-desktop;
+    padding: 0;
+  }
+
+  .comments__caption {
+    margin: 30px 0 0 0;
   }
 
   .comments__textarea {
-    margin: 0 0 0 0;
-    height: 163px;
-    width: 1200px;
+    margin: 0 0 43px 0;
+    height: 70px;
+    width: 100%;
   }
 }

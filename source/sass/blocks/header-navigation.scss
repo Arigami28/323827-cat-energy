@@ -20,10 +20,10 @@
   cursor: pointer;
 }
 
-.header-navigation__button:not(:checked )+ .header-navigation__label {
+.header-navigation__button:not(:checked) + .header-navigation__label {
   background: $white url("../img/icon-close.svg") no-repeat;
-
 }
+
 .header-navigation__button:checked + .header-navigation__label {
   background: $white url("../img/icon-mobile-menu.svg") no-repeat;
 }

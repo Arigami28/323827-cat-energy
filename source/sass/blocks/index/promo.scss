@@ -90,9 +90,9 @@
 @media (min-width: $resolution__desktop) {
   .promo {
     width: $block-size-desktop;
-    background: none;
     min-height: 576px;
     padding: 0 0 0 80px;
+    background: url("../img/index-can-desktop@1x.png") top 28% left 67% no-repeat;
   }
 
   .promo__caption {

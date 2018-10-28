@@ -46,6 +46,14 @@
   display: none;
 }
 
+.add-info__label:hover::after {
+  border-color: #bababa;
+}
+
+.add-info__label:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $resolution__tablet) {
   .add-info {
     justify-content: flex-start;

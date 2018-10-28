@@ -45,6 +45,14 @@
   display: none;
 }
 
+.complementary__label:hover::after {
+  border-color: #bababa;
+}
+
+.complementary__label:active {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $resolution__tablet) {
   .complementary {

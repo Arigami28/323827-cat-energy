@@ -17,6 +17,14 @@
   background: $white url("../img/logo-mobile.svg") center no-repeat;
 }
 
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+
 @media (min-width: $resolution__tablet) {
   .header {
     @include flex-row;

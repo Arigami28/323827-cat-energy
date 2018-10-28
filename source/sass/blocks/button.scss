@@ -6,4 +6,28 @@
   color: $white;
   border: none;
   background-color: $green;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $button__hover-color-green;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button_gray {
+  color: $greyish;
+  background-color: $greyish__light;
+}
+
+.button_gray:hover {
+  background-color: $button__hover-color-grey;
+}
+
+.button_gray:active {
+  opacity: 0.4;
+  color: rgb(185, 185, 185);
+  background-color: #ebebeb;
 }

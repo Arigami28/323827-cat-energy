@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 /*элементы блока customer-view*/
 .customer-view__text {
   font-family: $oswald;
@@ -11,7 +12,17 @@
   line-height: 1.25;
   text-transform: uppercase;
   margin: 0 20px;
-  padding: 0;
+  padding: 0 0 6px 0;
+  border-bottom: 1px dotted;
+  cursor: pointer;
+}
+
+.customer-view__text:hover {
+  border-bottom: 1px solid;
+}
+
+.customer-view__text:active {
+  border-color: transparent;
 }
 
 .customer-view__img {
@@ -28,13 +39,36 @@
   margin: 31px 0 0 23px;
 }
 
+.customer-view__line {
+  display: block;
+  position: relative;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background-color: #ffffff;
+}
+
+.customer-view__label {
+  content: "";
+  left: 5px;
+  top: 3px;
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+  cursor: pointer;
+}
+
 @media (min-width: $resolution__tablet) {
   .customer-view {
     justify-content: flex-end;
     align-items: center;
     width: $block-size-tablet;
     min-height: 573px;
-    margin: 70px 0 0 0;
+    margin: 76px 0 0 0;
   }
 
   .customer-view__text {
@@ -51,12 +85,62 @@
   .customer-view__img {
     margin: 0;
   }
+
+  .customer-view__line {
+    display: block;
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+    margin-bottom: 5px;
+  }
+
+  .customer-view__label {
+    display: block;
+    position: absolute;
+    top: auto;
+    bottom: -14px;
+    left: 199px;
+    width: 34px;
+    height: 34px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px #cdcdcd;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  .customer-view__label::after {
+    content: "";
+    display: block;
+    top: 12px;
+    left: 11px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  .customer-view__label:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .customer-view__label:active {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    border: solid 2px #68b738;
+  }
+
+  .customer-view__label:active::after {
+    top: 11px;
+    left: 10px;
+  }
 }
 
 @media (min-width: $resolution__desktop) {
   .customer-view {
     min-height: 583px;
-    margin: 12px 0 0 0;
+    margin: 18px 0 0 0;
   }
 
   .customer-view__wrapper {

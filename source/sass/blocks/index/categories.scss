@@ -65,6 +65,16 @@
   background: url("../img/icon-right-arrow-long.svg") center no-repeat;
 }
 
+.categories__link:hover::before {
+  width: 33px;
+  height: 11px;
+  background: url("../img/icon-right-arrow-verylong.svg") center no-repeat;
+}
+
+.categories__link:active {
+  opacity: 0.3;
+}
+
 .categories__block::after {
   content: "";
   display: block;

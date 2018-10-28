@@ -15,7 +15,7 @@
           <button class="header-navigation__button" type="button"></button>
           <ul class="header-navigation__list">
             <li class="header-navigation__list-item">
-              <a class="header-navigation__link header-navigation__link_color" href="#" title="Главная">Главная</a>
+              <a class="header-navigation__link header-navigation__link_color header-navigation__link_select" href="#" title="Главная">Главная</a>
             </li>
             <li class="header-navigation__list-item">
               <a class="header-navigation__link header-navigation__link_color" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
@@ -91,8 +91,10 @@
           <img class="customer-view__img customer-view__img_slim visually-hidden" src="http://placehold.it/311x232"  alt="Худой кот">
           <div class="customer-view__wrapper">
             <span class="customer-view__text">Было</span>
-            <input class="customer__switch visually-hidden" type="radio" id="switch__customer">
-            <label class="customer__label" for="switch__customer"></label>
+            <div class="customer-view__line">
+              <input class="customer-view__switch visually-hidden" type="text" id="switch__customer">
+              <label class="customer-view__label" for="switch__customer"></label>
+            </div>
             <span class="customer-view__text">Стало</span>
           </div>
         </article>

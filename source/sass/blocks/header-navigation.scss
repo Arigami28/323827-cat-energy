@@ -21,15 +21,15 @@
 }
 
 .header-navigation__button:not(:checked) + .header-navigation__label {
-  background: $white url("../img/icon-close.svg") no-repeat;
-}
-
-.header-navigation__button:checked + .header-navigation__label {
   background: $white url("../img/icon-mobile-menu.svg") no-repeat;
 }
 
+.header-navigation__button:checked + .header-navigation__label {
+  background: $white url("../img/icon-close.svg") no-repeat;
+}
+
 .header-navigation__button:checked ~ .header-navigation__list {
-  display: none;
+  display: block;
 }
 
 .header-navigation__link {
@@ -49,6 +49,7 @@
   @include reset-list-style;
   align-content: center;
   width: 100%;
+  display: none;
 }
 
 .header-navigation__list-item {

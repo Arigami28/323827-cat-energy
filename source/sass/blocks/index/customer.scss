@@ -74,6 +74,8 @@
   text-align: center;
   color: $greyish;
   text-transform: none;
+  background-color: #f2f2f2;
+  display: block;
   margin: 0 0 0 0;
   padding: 0 0;
 }
@@ -114,6 +116,14 @@
     line-height: 1.5;
   }
 
+  .customer__sub-advantages {
+    bottom: -5px;
+    left: 10%;
+    width: 130px;
+    font-size: 14px;
+    line-height: 1;
+  }
+
   .customer__advantages {
     align-items: center;
     font-size: 30px;
@@ -121,14 +131,11 @@
     margin-right: 44px;
     width: 162px;
     height: 72px;
-  }
 
-  .customer__sub-advantages {
-    bottom: -5px;
-    left: 3px;
-    width: 150px;
-    font-size: 14px;
-    line-height: 1;
+    &:nth-child(1) .customer__sub-advantages {
+      left: 20%;
+      width: 100px;
+    }
   }
 
   .customer-sub__caption-price {

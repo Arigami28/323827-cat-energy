@@ -1,11 +1,11 @@
 .client-info {
   @include flex-column;
   justify-content: space-between;
+  width: $block-size-mobil;
   border: none;
   padding: 0;
   margin: 0;
-  width: $block-size-mobil;
-  min-height: 260px;
+  min-height: 359px;
 }
 
 .client-info__wrapper {
@@ -31,7 +31,8 @@
   line-height: 1.29;
   text-transform: uppercase;
   font-weight: normal;
-  margin: 0 0 0 0;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 0;
 }
 
 .client-info__input-text_name {
@@ -55,14 +56,14 @@
     width: $block-size-tablet;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    min-height: 450px;
+    min-height: 565px;
   }
 
   .client-info__caption {
     font-size: 20px;
     line-height: 1.5;
     width: 350px;
-    margin: 58px 0 0 40px;
+    margin: 55px 0 63px 40px;
   }
 
   .client-info__content {
@@ -72,12 +73,12 @@
     width: 100%;
     min-height: 200px;
     padding: 0 0 0 0;
-    margin: 0 0 50px 0;
+    margin: 0 0 52px 0;
   }
 
   .client-info__wrapper {
     width: 631px;
-    margin: 0 0 20px 3px;
+    margin: 0 0 17px 3px;
   }
 
   .client-info__label {
@@ -110,7 +111,7 @@
   }
 
   .client-info__caption {
-    margin: 55px 0 0 0;
+    margin: 55px 0 65px 0;
   }
 
   .client-info__content {
@@ -119,7 +120,7 @@
 
   .client-info__wrapper {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 17px 0;
   }
 
   .client-info__input-text_name {

@@ -14,8 +14,8 @@
   position: absolute;
   content: "";
   top: 29px;
-  left: -50vw;
-  width: 150vw;
+  left: -20px;
+  width: $width__mobil;
   height: 3px;
   z-index: 1;
   background: #68b738;
@@ -54,6 +54,8 @@
 
   .comments::after {
     top: 80px;
+    left: -30px;
+    width: $width__tablet;
   }
 
   .comments__caption {
@@ -83,6 +85,8 @@
 
   .comments::after {
     top: 53px;
+    left: -110px;
+    width: 1440px;
   }
 
   .comments__caption {

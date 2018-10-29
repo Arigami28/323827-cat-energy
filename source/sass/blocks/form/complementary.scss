@@ -14,8 +14,8 @@
   position: absolute;
   content: "";
   top: 26px;
-  left: -50vw;
-  width: 150vw;
+  left: -20px;
+  width: $width__mobil;
   height: 3px;
   z-index: 1;
   background: #68b738;
@@ -82,6 +82,8 @@
 
   .complementary::after {
     top: 81px;
+    left: -30px;
+    width: $width__tablet;
   }
 
   .complementary__caption {
@@ -129,6 +131,8 @@
 
   .complementary::after {
     top: 46px;
+    left: -110px;
+    width: 1440px;
   }
 
   .complementary__caption {

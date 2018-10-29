@@ -32,9 +32,9 @@
   <section class="page__programm">
     <div class="page__wrapper page__wrapper_default">
       <form class="programm-form" action="https://echo.htmlacademy.ru" method="post">
-        <h1 class="programm-form__main-caption">Подбор программы</h1>
         <div class="programm-form__client">
           <fieldset class="programm-form__client-info client-info">
+            <h1 class="programm-form__main-caption">Подбор программы</h1>
             <h2 class="client-info__caption">Заполните анкету и мы подберем программу питания для вашего кота</h2>
             <div class="client-info__content">
               <div class="client-info__wrapper client-info__wrapper_name">
@@ -52,14 +52,16 @@
             </div>
           </fieldset>
           <fieldset class="programm-form__add-info add-info">
-            <input class="add-info__input-radio client-info__input-radio_selected" type="radio" id="client__reason-losing-weight" name="reason" value="Похудение" checked>
-            <label class="add-info__label label" for="client__reason-losing-weight">Похудение</label>
+            <div class="add-info__content">
+              <input class="add-info__input-radio client-info__input-radio_selected" type="radio" id="client__reason-losing-weight" name="reason" value="Похудение" checked>
+              <label class="add-info__label label" for="client__reason-losing-weight">Похудение</label>
 
-            <input class="add-info__input-radio" type="radio" id="client__reason-mass-gathering" name="reason" value="Набор массы">
-            <label class="add-info__label label" for="client__reason-mass-gathering">Набор массы</label>
+              <input class="add-info__input-radio" type="radio" id="client__reason-mass-gathering" name="reason" value="Набор массы">
+              <label class="add-info__label label" for="client__reason-mass-gathering">Набор массы</label>
 
-            <input class="add-info__input-radio" type="radio" id="client__reason-dont-know" name="reason" value="Не знаю(Нужен ваш совет)">
-            <label class="add-info__label label" for="client__reason-dont-know">Не знаю (Нужен ваш совет)</label>
+              <input class="add-info__input-radio" type="radio" id="client__reason-dont-know" name="reason" value="Не знаю(Нужен ваш совет)">
+              <label class="add-info__label label" for="client__reason-dont-know">Не знаю (Нужен ваш совет)</label>
+            </div>
           </fieldset>
         </div>
         <fieldset class="programm-form__сontact-details contact-details">

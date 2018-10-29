@@ -81,7 +81,7 @@
     width: 324px;
     border: none;
     padding: 0;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -108,16 +108,18 @@
   .catalog-item__table {
     min-height: 93px;
     width: 250px;
-    margin: 0 0 35px 0;
+    margin: 0 0 30px 0;
     padding: 0;
   }
 
   .catalog-item__row {
+    height: 33px;
     font-size: 16px;
     border-bottom: 1px solid $color-customer__border;
     font-weight: normal;
     line-height: 1;
-    padding: 20px 0;
+    padding: 0;
+    outline: 1px solid green;
   }
 
   .catalog-item__description {
@@ -134,11 +136,6 @@
     justify-content: center;
     width: 100%;
     min-height: 50%;
-  }
-
-  .catalog-item__col-left,
-  .catalog-item__col-right {
-    padding: 11px 0 4px 0;
   }
 
   .catalog-item__button {

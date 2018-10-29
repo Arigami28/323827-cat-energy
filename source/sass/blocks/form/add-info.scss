@@ -1,15 +1,24 @@
 .add-info {
   @include flex-column;
-  align-items: flex-start;
-  justify-content: space-around;
+  align-items: center;
   min-height: 158px;
   width: 100%;
-  padding: 15px 20px 10px  20px;
+  padding: 0;
   margin: 0;
   border-left: none;
   border-right: none;
   border-top: $grey-border;
   border-bottom: $grey-border;
+}
+
+.add-info__content {
+  @include flex-column;
+  align-items: flex-start;
+  justify-content: space-around;
+  min-height: 158px;
+  width: $block-size-mobil;
+  padding: 15px 20px 15px  0;
+  margin: 0;
   position: relative;
 }
 
@@ -29,7 +38,6 @@
   border: solid 1px #cdcdcd;
   border-radius: 50%;
 }
-
 
 .add-info__input-radio:checked + .add-info__label::before {
   top: 4px;
@@ -56,11 +64,17 @@
 
 @media (min-width: $resolution__tablet) {
   .add-info {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .add-info__content {
     justify-content: flex-start;
     width: 631px;
     min-height: 195px;
     border: $grey-border;
     padding: 0;
+    margin: 0 0 0 0;
   }
 
   .add-info__label {
@@ -89,10 +103,18 @@
 @media (min-width: $resolution__desktop) {
   .add-info {
     width: 570px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+  }
+
+  .add-info__content {
+    justify-content: space-between;
+    width: 570px;
+    min-height: 195px;
+    border: $grey-border;
+    padding: 33px 80px 32px 85px;
   }
 
   .add-info__label {
-    margin: 30px 0 0 87px;
+    margin: 0 0 0 0;
   }
 }

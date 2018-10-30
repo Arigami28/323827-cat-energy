@@ -2,7 +2,7 @@
   @include flex-column;
   position: relative;
   min-height: 66px;
-  width: 100%;
+  width: $width__mobil;
   justify-content: flex-end;
 }
 

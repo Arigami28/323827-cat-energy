@@ -1,5 +1,5 @@
 .header-navigation {
-  display: flex;
+  align-items: center;
   margin-top: 66px;
 }
 
@@ -11,11 +11,11 @@
 
 .header-navigation__label {
   display: block;
-  width: 19px;
-  height: 19px;
+  width: 24px;
+  height: 23px;
   position: absolute;
   top: 23px;
-  right: 23px;
+  right: 20px;
   border: none;
   cursor: pointer;
 }
@@ -29,12 +29,13 @@
 }
 
 .header-navigation__button:checked ~ .header-navigation__list {
-  display: block;
+  @include flex-row;
 }
 
 .header-navigation__link {
   @include reset-link-style;
   font-family: $oswald;
+  width: $width__mobil;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
@@ -45,9 +46,9 @@
 }
 
 .header-navigation__list {
-  @include flex-column;
   @include reset-list-style;
   align-content: center;
+  flex-wrap: wrap;
   width: 100%;
   display: none;
 }

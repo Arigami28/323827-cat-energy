@@ -42,7 +42,8 @@
 }
 
 .programm-form__button {
-  padding: 10px 77px 10px 80px;
+  padding: 10px 78px 10px 78px;
+  text-align: center;
 }
 
 .programm-form__client {
@@ -64,7 +65,7 @@
     align-self: flex-start;
     font-size: 60px;
     line-height: 1;
-    margin: 55px 0 0 0;
+    margin: 57px 0 0 0;
   }
 
   .programm-form__caption {
@@ -75,9 +76,9 @@
     @include flex-row;
     width: $block-size-tablet;
     justify-content: flex-start;
-    min-height: 159px;
     padding: 0 30px;
     align-items: flex-start;
+    margin-bottom: 72px;
   }
 
   .programm-form__client {
@@ -91,7 +92,7 @@
     font-style: normal;
     font-stretch: normal;
     line-height: 1;
-    margin: 36px 0 0 11px;
+    margin: 10px 0 0 11px;
     padding: 17px 67px 15px 63px;
   }
 
@@ -99,7 +100,7 @@
     font-size: 16px;
     font-weight: normal;
     line-height: 1;
-    margin: 50px 0 0 60px;
+    margin: 26px 0 0 60px;
   }
 }
 

@@ -1,7 +1,6 @@
 .complementary {
   @include flex-column;
   justify-content: space-between;
-  min-height: 262px;
   width: $block-size-mobil;
   border: none;
   padding: 0;
@@ -9,7 +8,7 @@
   position: relative;
 }
 
-.complementary::after {
+/*.complementary::after {
   display: block;
   position: absolute;
   content: "";
@@ -19,22 +18,21 @@
   height: 3px;
   z-index: 1;
   background: #68b738;
-}
+}*/
 
 .complementary__wrapper {
   @include flex-column;
   width: 100%;
-  min-height: 186px;
+  margin-top: 40px;
+  margin-bottom: 18px;
 }
 
 .complementary__caption {
   font-weight: normal;
-  margin: 11px 0 0 -20px;
+  margin: 12px 0 0 0;
   padding: 0 0 0 0;
-  width: 182px;
   z-index: 2;
   background: white;
-  text-align: center;
 }
 
 
@@ -75,7 +73,6 @@
     width: $block-size-tablet;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 282px;
     padding: 0 30px;
     margin: 0;
   }
@@ -87,7 +84,7 @@
   }
 
   .complementary__caption {
-    margin: 58px 0 0 -30px;
+    margin: 60px 0 0 10px;
     width: 292px;
   }
 
@@ -98,13 +95,12 @@
     align-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 150px;
-    margin: 0 0 0 0;
+    margin: 65px 0 0 0;
   }
 
   .complementary__label {
     width: 180px;
-    margin: 0 56px 0 68px;
+    margin: 0 56px 54px 68px;
   }
 
   .complementary__label::after {

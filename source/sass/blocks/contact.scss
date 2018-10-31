@@ -58,9 +58,10 @@
     justify-content: space-between;
     align-items: center;
     min-height: 201px;
-    width: 100%;
-    padding: 5px 70px 0 70px;
+    width: $block-size-tablet;
+    padding: 5px 40px 0 40px;
     background: inherit;
+    margin: 0 auto;
   }
 
   .contact__caption {

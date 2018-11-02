@@ -71,7 +71,7 @@
     width: 631px;
     min-height: 195px;
     border: $grey-border;
-    padding: 0;
+    padding: 10px 0 0 0;
     margin: 0 auto;
   }
 
@@ -80,19 +80,22 @@
     font-size: 20px;
     font-weight: normal;
     line-height: 1.13;
-    margin: 32px 0 0 89px;
+    padding: 22px 0 10px 89px;
+    margin: 0;
   }
 
   .add-info__label::after {
-    top: -8px;
-    left: -59px;
+    top: auto;
+    bottom: 0;
+    left: 28px;
     width: 40px;
     height: 40px;
   }
 
   .add-info__input-radio:checked + .add-info__label::before {
-    top: 4px;
-    left: -48px;
+    bottom: 12px;
+    top: auto;
+    left: 39px;
     width: 18px;
     height: 18px;
   }
@@ -105,14 +108,14 @@
   }
 
   .add-info__content {
-    justify-content: space-between;
     width: 570px;
-    min-height: 195px;
     border: $grey-border;
-    padding: 33px 80px 32px 85px;
+    /*padding: 33px 80px 32px 85px;*/
+    padding: 10px 0 0 0;
   }
 
   .add-info__label {
     margin: 0 0 0 0;
+    padding: 21px 0 10px 89px;
   }
 }

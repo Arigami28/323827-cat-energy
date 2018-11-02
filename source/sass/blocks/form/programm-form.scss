@@ -2,7 +2,6 @@
   @include flex-column;
   width: 100%;
   align-items: center;
-  border-top: $grey-border;
   min-height: 1358px;
 }
 
@@ -11,7 +10,8 @@
   font-size: 36px;
   line-height: 1.67;
   font-weight: normal;
-  margin: 13px 0 0 0;
+  margin: 0 0 0 0;
+  padding: 13px 0 0 0;
   align-self: flex-start;
 }
 
@@ -65,7 +65,8 @@
     align-self: flex-start;
     font-size: 60px;
     line-height: 1;
-    margin: 57px 0 0 0;
+    margin: 0 0 0 0;
+    padding: 57px 0 0 0;
   }
 
   .programm-form__caption {
@@ -78,6 +79,7 @@
     justify-content: flex-start;
     padding: 0 30px;
     align-items: flex-start;
+    margin-top: 44px;
     margin-bottom: 72px;
   }
 
@@ -111,7 +113,8 @@
   }
 
   .programm-form__main-caption {
-    margin: 67px 0 0 0;
+    margin: 0 0 0 0;
+    padding: 67px 0 0 0;
   }
 
   .programm-form__client {
@@ -126,15 +129,15 @@
     align-items: center;
     padding: 0;
     width: $block-size-desktop;
-    min-height: 187px;
+    margin: 45px 0 52px 0;
   }
 
   .programm-form__button {
     padding: 17px 206px 15px 209px;
-    margin: 0 0 30px 0;
+    margin: 27px 0 30px 2px;
   }
 
   .programm-form__text-tutorial {
-    margin: 0 0 34px 81px;
+    margin: 0 0 10px 80px;
   }
 }

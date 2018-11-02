@@ -8,44 +8,34 @@
   position: relative;
 }
 
-/*.complementary::after {
-  display: block;
-  position: absolute;
-  content: "";
-  top: 26px;
-  left: -20px;
-  width: $width__mobil;
-  height: 3px;
-  z-index: 1;
-  background: #68b738;
-}*/
-
 .complementary__wrapper {
   @include flex-column;
   width: 100%;
-  margin-top: 40px;
-  margin-bottom: 18px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
 .complementary__caption {
   font-weight: normal;
-  margin: 12px 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  padding: 12px 0 0 0;
   z-index: 2;
   background: white;
 }
 
 
 .complementary__label {
-  margin: 0 0 24px 45px;
+  width: 100%;
+  padding: 15px 0 10px 45px;
+  text-align: left;
   position: relative;
 }
 
 .complementary__label::after {
   position: absolute;
   content: "";
-  top: -5px;
-  left: -45px;
+  bottom: 3px;
+  left: 0;
   width: 30px;
   height: 30px;
   border: solid 1px #cdcdcd;
@@ -84,7 +74,8 @@
   }
 
   .complementary__caption {
-    margin: 60px 0 0 10px;
+    margin: 0 0 0 0;
+    padding: 60px 0 0 10px;
     width: 292px;
   }
 
@@ -95,19 +86,36 @@
     align-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    margin: 65px 0 0 0;
+    margin: 25px 0 0 0;
   }
 
   .complementary__label {
-    width: 180px;
-    margin: 0 56px 54px 68px;
+    width: 50%;
+    padding: 11px 0 11px 68px;
+    margin-top: 30px;
   }
 
   .complementary__label::after {
-    top: -8px;
-    left: -59px;
+    top: 0;
+    left: 10px;
     width: 40px;
     height: 40px;
+  }
+
+  .complementary__label_water {
+    padding-left: 88px;
+  }
+
+  .complementary__label_water::after {
+    left: 30px;
+  }
+
+  .complementary__label_vitamins {
+    padding-left: 88px;
+  }
+
+  .complementary__label_vitamins::after {
+    left: 30px;
   }
 
   .complementary__input-checkbox:checked + .complementary__label::after {
@@ -119,7 +127,6 @@
 @media (min-width: $resolution__desktop) {
   .complementary {
     justify-content: space-between;
-    min-height: 165px;
     padding: 0;
     width: $block-size-desktop;
     position: relative;
@@ -132,16 +139,16 @@
   }
 
   .complementary__caption {
-    margin: 23px 0 0 -40px;
+    margin: 0 0 0 0;
+    padding: 23px 0 0 0;
   }
 
   .complementary__wrapper {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
-    margin: 0;
     width: 100%;
-    min-height: 40px;
+    margin-top: 65px;
   }
 
   .complementary__label {
